@@ -1,0 +1,72 @@
+.container{
+    width: 85%;
+    margin: auto;
+}
+.containerTwo{
+    width: 95%;
+    margin: auto;
+}
+.aboutDiv{
+ background-image: url('../../../public/Assets/Img/about.png');
+ height: 380px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-position: center;
+}
+.about{
+    font-size: 130px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    font-size: 24px;
+    color: rgba(102, 102, 102, 1);
+    font-weight: 600;
+}
+.aboutInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 84px;
+    gap: 50px;
+}
+.video{
+    width: 100%;
+    max-width: 1250px;
+}
+.add{
+    margin-top: 21px;
+}
+.paragraf{
+    max-width: 1400px;
+    p{
+        font-size: 32px;
+        font-weight: 500;
+        color: rgba(102, 102, 102, 1);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        span{
+            color: #2E5BCF;
+        }
+    }
+}
+.sectionTree{
+    display: flex;
+    justify-content: center;
+}
+.orderDiv{
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1900px){
+   
+}

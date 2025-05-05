@@ -1,0 +1,134 @@
+{
+    "leng": "ENG",
+    "value": "USD",
+    "money":"$",
+    "product":"Product:",
+    "general": "General:",
+    
+    
+
+    "pages": [
+        {"name": "Shops"},
+        {"name": "About us","path":"/about"},
+        {"name": "Therapy"},
+        {"name": "Endodontics"},
+        {"name": "Orthopedics"},
+        {"name": "Orthodontics"},
+        {"name": "Surgery/Periodontology"},
+        {"name": "Equipment"},
+        {"name": "Laboratory"},
+        {"name": "Books"}
+    ],
+    "suggest":"Suggested",
+    "news":"NEWS",
+    "shops":"SHOPS",
+    "add":"Append",
+    "jobs":"Job announcements",
+    "aboutUs": "About Us",
+
+    "dentist":"Dentist",
+    "dental":"Dental technician",
+    "orthodontist":"Orthodontist",
+    "doctor":"Doctor",
+
+
+    "orderAll":"WE DELIVER INDEPENDENTLY",
+    "orderMassa":"FROM THE VOLUME OF THE PRODUCT",
+    "orderPrice":"PRICE՝ 1 $",
+    
+
+    
+
+    "cards":[ 
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png", "id":"1"},  
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png", "id":"2"},
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png", "id":"3"},
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png", "id":"4"}
+
+     ],
+     
+    "cardsTwo":[ 
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png", "id":"1"},  
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png", "id":"2"},
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png", "id":"3"},
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png", "id":"4"},
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png", "id":"5"},
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png", "id":"6"},  
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png", "id":"7"},
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png", "id":"8"}
+
+   ],
+"firmNames": [
+  {
+    "img": "./Assets/Img/arm.png",
+    "firm": "Alfa Stom",
+    "label": "Activity: Sale of dental and dental laboratory materials and equipment\nAddress: 28/2 Proshyan, Yerevan, Armenia\nPhone: (+374) 010 27 92 27\nWorking hours: Monday - Saturday: 10:00 - 22:00"
+  },
+  {
+    "img": "/assets/img/alfa.png",
+    "firm": "ArmDental",
+    "label": "Activity: Sale of dental and dental laboratory materials and equipment\nAddress: 5 Mashtots, Yerevan, Armenia\nPhone: (+374)10 53 44 55, (+374)98 11 16 11\nWorking hours: Monday - Friday: 10:00 - 19:00, Saturday: 10:00 - 18:00"
+  },
+  {
+    "img": "/assets/img/den.png",
+    "firm": "Dentax",
+    "label": "Activity: Sale of dental and dental laboratory materials and equipment\nAddress: 9 H. Paronyan, Yerevan, Armenia\nPhone: (+374) 12 55 53 00\nWorking hours: Monday - Friday: 9:00 - 17:00"
+  },
+  {
+    "img": "./Assets/Img/arm.png",
+    "firm": "Alfa Stom",
+    "label": "Activity: Sale of dental and dental laboratory materials and equipment\nAddress: 28/2 Proshyan, Yerevan, Armenia\nPhone: (+374) 010 27 92 27\nWorking hours: Monday - Saturday: 10:00 - 22:00"
+  },
+  {
+    "img": "/assets/img/alfa.png",
+    "firm": "ArmDental",
+    "label": "Activity: Sale of dental and dental laboratory materials and equipment\nAddress: 5 Mashtots, Yerevan, Armenia\nPhone: (+374)10 53 44 55, (+374)98 11 16 11\nWorking hours: Monday - Friday: 10:00 - 19:00, Saturday: 10:00 - 18:00"
+  },
+  {
+    "img": "/assets/img/den.png",
+    "firm": "Dentax",
+    "label": "Activity: Sale of dental and dental laboratory materials and equipment\nAddress: 9 H. Paronyan, Yerevan, Armenia\nPhone: (+374) 12 55 53 00\nWorking hours: Monday - Friday: 9:00 - 17:00"
+  }
+],
+
+"footerpages":[
+  {"name":"Information"},
+  {"name":"Advertisement"},
+  {"name":"Dental test ;)"},
+  {"name":"About us"},
+  {"name":"Conditions"},
+  {"name":"Delivery"},
+  {"name":"Services"}
+
+],
+"footerpagesOne":[
+  {"name":"Customer service"},
+  {"name":"Contact us"},
+  {"name":"Return of the product"},
+  {"name":"Site map"}
+
+],
+"footerpagesTwo":[
+  {"name":"Additionally"},
+  {"name":"Brands"},
+  {"name":"Gift cards"},
+  {"name":"Partners"},
+  {"name":"Discounts"}
+
+
+],
+"footerpagesThree":[
+  {"name":"My storage"},
+  {"name":"My storage"},
+  {"name":"Order history"},
+  {"name":"Favourites"},
+  {"name":"News"}
+
+
+],
+"footerFour":[
+  {"name":"StomEx © 2021 Dental Delivery System"}
+]
+
+
+}

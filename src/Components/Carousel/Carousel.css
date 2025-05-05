@@ -1,0 +1,20 @@
+.containerTwo{
+    width: 80%;
+    margin: auto;
+}
+.caruselDiv{
+    background-image: url('../../../public/Assets/Img/MaskGroup.png');
+    height: 380px;
+    width: 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #e6e5e5;
+}
+@media only screen and (max-width: 1300px){
+    .caruselDiv{
+        background-size: contain;
+        height: 300px;
+    }
+
+}

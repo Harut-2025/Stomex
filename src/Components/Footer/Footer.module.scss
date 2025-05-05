@@ -1,0 +1,81 @@
+.bigBlockFooter{
+    background-color: rgba(196, 196, 196, 1);
+}
+.infoBlock {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+
+}
+
+.containerFooter {
+    width: 90%;
+    margin: auto;
+    
+}
+
+.infoBlock ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 26.99px;
+}
+
+.footerBlock {
+    display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+ 
+  
+    
+    
+}
+.miniBlock ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.miniBlock ul li{
+    list-style: none;
+    text-decoration: none;
+    width: 700;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+}
+.miniBlock ul li a{
+    text-decoration: none;
+    width: 700;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+}
+.containerTwo{
+    width: 85%;
+    margin: auto;
+}
+.footerSection{
+    background-color:rgba(5, 5, 5, 0.49);
+    padding: 32px 42px;
+}
+.footerSection li{
+    list-style: none;
+}
+.footerSection li a{
+    text-decoration: none;
+    font-size:16px ;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media only screen and (max-width: 1000px){
+.footerBlock{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+}
+@media only screen and (max-width: 680px){
+    .footerBlock{
+       
+        
+    }
+    
+    }

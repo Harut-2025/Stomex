@@ -1,0 +1,99 @@
+.card {
+    width: 310px;
+   height: 483px;
+   background-size: auto;
+    
+}
+.information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.starsDiv{
+    margin-top: 10px;
+}
+.cardsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+
+}
+
+.new{
+    width: 65px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E5BCF;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #2E5BCF;
+    
+    
+    p{
+        color: white;
+        font-size: 20px;
+    }
+}
+.reiting{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+    height: 309px;
+    width: 310px;
+    margin-bottom: 0px;
+}
+.card h3{
+    font-size: 24px;
+    font-weight: 400;
+    width: 230px;
+    margin-left: 17px;
+    margin-top: 220px;
+    height: 50px;
+    
+    
+}
+.cardInfo{
+    font-size: 14px;
+    margin-left: 17px;
+    margin-top: 50px;
+    
+}
+.cardPrice{
+    color: #16AA4D;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 17px;
+    margin-top: -20px;
+}
+.add{
+    width: 80%;
+    background-color: #2E5BCF;
+    color: white;
+    height: 48px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-right: 1px solid #C4C4C480;
+}
+.save{
+    height: 48px;
+    width: 20%;
+    background-color: #2E5BCF;
+    border: none;
+    cursor: pointer;
+ }
+ .cardButtons{
+    display: flex;
+    align-items: center;
+}

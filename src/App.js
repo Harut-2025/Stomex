@@ -10,7 +10,13 @@ import About from './Pages/About/About';
 function App() {
   const [buyCard, setBuyCard] = useState([]);
   const addCardToBasket = (card) => {
-    setBuyCard(prev => [...prev, card]);
+    setBuyCard(prev => {
+      const cart = prev.some(item => item.id === card.id);
+      if (!cart) {
+        return [...prev, card];
+      }
+      return prev;
+    });
   };
   const [favorit, setFavorit] = useState([]);
 
@@ -18,7 +24,9 @@ function App() {
     setFavorit(prev => {
       const exists = prev.some(item => item.id === card.id);
       if (!exists) {
-        return [...prev, card];
+        const updated = [...prev, card]; 
+      localStorage.setItem('favorits', JSON.stringify(updated));
+      return updated;
       }
       return prev;
     });

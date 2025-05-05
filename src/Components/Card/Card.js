@@ -4,6 +4,7 @@ import '../../i18n.js'
 
 import styles from './Card.module.scss'
 import Stars from '../Ul/Stars/Stars.js';
+import FavoritButton from '../Ul/FavoritButton/FavoritButton.js';
 export default function Card({ addCardToBasket , addCardToFavorit}) {
     const { t, i18n } = useTranslation();
     const changeLanguage = (lng) => {
@@ -28,11 +29,8 @@ export default function Card({ addCardToBasket , addCardToFavorit}) {
                     <p className={styles.cardInfo}>{card.info}</p>
                     <p className={styles.cardPrice}>{card.price} {t('money')}</p>
                    <div className={styles.cardButtons}>
-                        <button className={styles.add}
-                            onClick={() => addCardToBasket(card)}
-                        >
-                            <img src="./Assets/Img/Group 469.png" alt="" />{t('add')}</button>
-                        <button className={styles.save} onClick={() => addCardToFavorit(card)}><img src="./Assets/Img/Vector.png" alt="" /></button>
+                    <button className={styles.add} onClick={() => addCardToBasket(card)}><img src="./Assets/Img/Group 469.png" alt="" />{t('add')}</button>
+                        <FavoritButton onClick={() => addCardToFavorit(card)}/>
                     </div>
 
                     </div>

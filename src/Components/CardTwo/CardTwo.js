@@ -4,6 +4,7 @@ import '../../i18n.js'
 
 import styles from './CardTwo.module.scss'
 import Stars from '../Ul/Stars/Stars.js';
+import FavoritButton from '../Ul/FavoritButton/FavoritButton.js';
 export default function CardTwo({ addCardToBasket , addCardToFavorit}) {
     const { t, i18n } = useTranslation();
     const changeLanguage = (lng) => {
@@ -32,7 +33,7 @@ export default function CardTwo({ addCardToBasket , addCardToFavorit}) {
                             onClick={() => addCardToBasket(card)}
                         >
                             <img src="./Assets/Img/Group 469.png" alt="" />{t('add')}</button>
-                        <button className={styles.save} onClick={() => addCardToFavorit(card)}><img src="./Assets/Img/Vector.png" alt="" /></button>
+                        <FavoritButton onClick={() => addCardToFavorit(card)} />
                     </div>
 
                     </div>

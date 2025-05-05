@@ -135,7 +135,6 @@
 }
 .shoplogo{
     width: 130px;
-    height: 130px;
 }
 .jobsCard{
     display: flex;
@@ -162,50 +161,6 @@
     margin-bottom: 50px;
 }
 
-// .maping{
-//     background-image: url('../../public/Assets/Img/map.png');
-//     width: 100%;
-//     height: 380px;
-//     margin-top: 150px;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     justify-content: center;
-//     align-items: center;
-//     display: flex;
-// }
-// .order{
-//     padding: 0px 50px;
-//     width: fit-content;
-//     background-color: #4272eb;
-//     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-//     p{
-//         font-size: 24px;
-//        font-weight: bold;
-       
-//        font-family: Arial, Helvetica, sans-serif;
-
-//     }
-// }
-// .orderWhite{
-//     padding: 0px 30px;
-//     width: fit-content;
-//     background-color: #4272eb;
-//     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-//     p{
-//         font-size: 24px;
-//        font-weight: bold;
-//        color: white;
-//        font-family: Arial, Helvetica, sans-serif;
-       
-
-//     }
-// }
-// .matherOfOrder{
-//     display: flex;
-//     flex-direction: column;
-//     gap: 20px;
-    
-// }
 
 
 @media only screen and (max-width: 400px){
@@ -242,6 +197,55 @@
 @media only screen and (max-width: 344px){
     .hayt{
         font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1800px){
+    .jobsInfo img{
+        width: 230px;
+    }
+    .jobName{
+        font-size: 30px;
+    }
+
+}
+@media only screen and (max-width: 1700px){
+    .jobsInfo img{
+        width: 200px;
+    }
+    .jobName{
+        font-size: 28px;
+    }
+
+
+}
+@media only screen and (max-width: 1500px){
+    .jobsInfo img{
+        width: 180px;
+    }
+    .jobName{
+        font-size: 25px;
+    }
+
+
+}
+@media only screen and (max-width: 1400px){
+    .jobsInfo img{
+        width: 160px;
+    }
+    .jobName{
+        font-size: 23px;
+    }
+
+
+}
+@media only screen and (max-width: 1090px){
+    .jobsCard{
+        gap: 50px;
+    }
+}
+@media only screen and (max-width: 920px){
+    .jobsCard{
+        gap: 30px;
     }
 }
 

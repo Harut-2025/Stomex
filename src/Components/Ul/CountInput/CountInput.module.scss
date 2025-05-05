@@ -1,0 +1,53 @@
+/* number-input.css */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    background-color: #f9fafb;
+  }
+  
+  .numberinput {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    width: 16rem;
+    height: 30px;
+    background-color: white;
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 100%;
+    color: #6b7280;
+    cursor: pointer;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  .button:hover {
+    color: #374151;
+  }
+  
+  .button span {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+  .value {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #374151;
+    font-size: 1.125rem;
+  }

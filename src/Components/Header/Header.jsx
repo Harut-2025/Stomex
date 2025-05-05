@@ -7,6 +7,7 @@ import Menu from '../Ul/Menu/Menu';
 import Leng from '../Ul/Leng/Leng';
 import Basket from '../Basket/Basket.js';
 import { Link } from 'react-router-dom';
+import CountInput from '../Ul/CountInput/CountInput.js';
 
 
 
@@ -59,6 +60,7 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit }) {
                     <img src={cart.img} alt="" className={styles.basketImg} />
                     <div>
                       <p className={styles.basketTitle}>{cart.type} {cart.name}</p>
+                      <CountInput/>
                     </div>
                     <div>
                       <p className={styles.basketPrice}>{cart.price} {t('money')}</p>

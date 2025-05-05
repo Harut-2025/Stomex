@@ -63,10 +63,73 @@
 
 
 
-
-
-
-
-@media only screen and (max-width: 1900px){
+@media only screen and (max-width: 1800px){
+   .paragraf p {
+    font-size: 28px;
+   }
    
+}
+
+
+
+@media only screen and (max-width: 1600px){
+    iframe{
+        height: 650px;
+    }
+    .paragraf p {
+        font-size: 25px;
+    }
+    .sectionTree{
+        width: 70%;
+        margin: auto;
+    }
+   
+}
+@media only screen and (max-width: 1300px){
+    iframe{
+        height: 600px;
+    }
+   
+}
+@media only screen and (max-width: 1200px){
+    iframe{
+        height: 500px;
+    }
+    .about{
+        font-size: 100px;
+    }
+   
+}
+@media only screen and (max-width: 980px){
+   .add{
+    display: none;
+   }
+   .about{
+    font-size: 90px;
+}
+   
+}
+@media only screen and (max-width: 700px){
+    
+    .about{
+     font-size: 70px;
+ } 
+}
+@media only screen and (max-width: 550px){
+    
+    .about{
+     font-size: 60px;
+ } 
+}
+@media only screen and (max-width: 450px){
+    
+    .about{
+     font-size: 50px;
+ } 
+}
+@media only screen and (max-width: 350px){
+    
+    .about{
+     font-size: 40px;
+ } 
 }

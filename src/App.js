@@ -21,20 +21,26 @@ function App() {
 
   const addCardToBasket = (card) => {
     setBuyCard(prev => {
-      const alreadyInCart = prev.some(item => item.id === card.id);
+      const alreadyInCart = prev.some(item => item.id === card.id );
       if (alreadyInCart) return prev;
       const updated = [...prev, card];
       localStorage.setItem('buyCard', JSON.stringify(updated)); 
       return updated;
+      
+      
     });
   };
 
   const addCardToFavorit = (card) => {
     setFavorit(prev => {
       const alreadyFavorited = prev.some(item => item.id === card.id);
-      if (alreadyFavorited) return prev;
-      const updated = [...prev, card];
-      localStorage.setItem('favorits', JSON.stringify(updated)); 
+      let updated;
+      if (alreadyFavorited) {
+        updated = prev.filter(item => item.id !== card.id); 
+      } else {
+        updated = [...prev, card];
+      }
+      localStorage.setItem('favorits', JSON.stringify(updated));
       return updated;
     });
   };
@@ -59,7 +65,7 @@ function App() {
       <div className="App">
         <Header addCardToBasket={addCardToBasket} buyCard={buyCard} setBuyCard={setBuyCard} favorit={favorit} setFavorit={setFavorit} totalPrice={totalPrice} />
         <Routes>
-          <Route path="/" element={<Home addCardToBasket={addCardToBasket} addCardToFavorit={addCardToFavorit} />} />
+          <Route path="/" element={<Home addCardToBasket={addCardToBasket} addCardToFavorit={addCardToFavorit} favorit={favorit} />} />
           <Route path="/karzina" element={<Karzina buyCard={buyCard} setBuyCard={setBuyCard} totalPrice={totalPrice}/> } />
           
           {pagesList.map((page, index) => (

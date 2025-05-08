@@ -52,6 +52,7 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
             {basketOpen && (
 
               <div className={styles.shopCard}>
+                <div className={styles.list}>
                 {buyCard.map((cart, index) => (
                   <div className={styles.soloDiv} key={index}>
                     <img src={cart.img} alt="" className={styles.basketImg} />
@@ -71,6 +72,7 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
                     }} />
                   </div>
                 ))}
+                </div>
                 <div className={styles.shopCardFooter}>
                   <div className={styles.product}>{t('product')} {buyCard.length}</div>
                   <div className={styles.general}>{t('general')} {totalPrice} {t('money')}</div>

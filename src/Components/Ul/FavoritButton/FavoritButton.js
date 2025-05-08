@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Heart } from 'lucide-react';
 import styles from './FavoritButton.module.scss'
 
-export default function FavoritButton({onClick}) {
+export default function FavoritButton({onClick, isFavorited}) {
   const [isRed, setIsRed] = useState(false);
 
   const handleClick = () => {
@@ -21,8 +21,8 @@ export default function FavoritButton({onClick}) {
       >
         <Heart
           size={32}
-          color={isRed ? "red" : "gray"}
-          fill={isRed ? "red" : "none"}
+          color={isFavorited ? "red" : "gray"}
+          fill={isFavorited ? "red" : "none"}
         />
       </button>
     </div>

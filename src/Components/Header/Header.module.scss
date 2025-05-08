@@ -76,11 +76,16 @@ nav {
     padding: 25px;
     border-radius: 5px;
     border-color: #C4C4C4;
-    display: flex;
+    
+    
+}
+.list{
+     max-height: 350px;
+     overflow: auto;
+     scrollbar-width: none;
+     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-height: 350px;
-    overflow: auto;
 }
 .favoritList{
     position: absolute;
@@ -89,7 +94,6 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
     box-shadow: 0px 0px 4px 0px #00000040;
     background-color: white;
     border-radius: 5px;
@@ -136,6 +140,8 @@ nav {
 
 .shopCardFooter {
     background-color: rgba(8, 174, 226, 0.13);
+    margin-top: 20px;
+    margin-bottom: 10px;
 
 }
 

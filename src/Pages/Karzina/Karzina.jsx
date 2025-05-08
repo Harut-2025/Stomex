@@ -4,6 +4,7 @@ import CountInput from '../../Components/Ul/CountInput/CountInput';
 import '../../i18n'
 import { useTranslation } from 'react-i18next';
 import Carusel from '../../Components/Carousel/Carousel'
+import Order from '../../Components/Order/Order'
 
 export default function Karzina({ buyCard, setBuyCard, totalPrice }) {
    const { t, i18n } = useTranslation();
@@ -82,6 +83,9 @@ export default function Karzina({ buyCard, setBuyCard, totalPrice }) {
         </div>
 
       </div>
+    </section>
+    <section>
+      <Order/>
     </section>
     </>
   )

@@ -10,7 +10,7 @@ import MenuSlider from '../Components/MenuSlider/MenuSlider.jsx';
 import translationData from '../locales/hy/translation.json';
 import Order from '../Components/Order/Order.jsx'
 
-export default function Home({ addCardToBasket, addCardToFavorit }) {
+export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
   const { t, i18n } = useTranslation();
   const shoping = i18n.t('shoping', { returnObjects: true });
 
@@ -25,7 +25,7 @@ export default function Home({ addCardToBasket, addCardToFavorit }) {
             </a>
             <div>
               <p className={styles.news}>{t('news')}</p>
-              <Card addCardToBasket={addCardToBasket}  addCardToFavorit={addCardToFavorit}/>
+              <Card addCardToBasket={addCardToBasket}  addCardToFavorit={addCardToFavorit} favorit={favorit}/>
               <p className={styles.shops}>{t('shops')}</p>
             </div>
             <a href="https://www.zendesk.com/" target="blank">

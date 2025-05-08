@@ -5,14 +5,14 @@ import '../../i18n.js'
 import styles from './CardTwo.module.scss'
 import Stars from '../Ul/Stars/Stars.js';
 import FavoritButton from '../Ul/FavoritButton/FavoritButton.js';
-export default function CardTwo({ addCardToBasket , addCardToFavorit}) {
+export default function CardTwo({ addCardToBasket , addCardToFavorit, favorit}) {
     const { t, i18n } = useTranslation();
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
     const cardsList = i18n.t('cardsTwo', { returnObjects: true })
 
-
+    const isCardFavorited = (id) => (favorit || []).some(item => item.id === id);
 
 
     return (
@@ -29,11 +29,9 @@ export default function CardTwo({ addCardToBasket , addCardToFavorit}) {
                     <p className={styles.cardInfo}>{card.info}</p>
                     <p className={styles.cardPrice}>{card.price} {t('money')}</p>
                    <div className={styles.cardButtons}>
-                        <button className={styles.add}
-                            onClick={() => addCardToBasket(card)}
-                        >
+                        <button className={styles.add} onClick={() => addCardToBasket(card)}>
                             <img src="./Assets/Img/Group 469.png" alt="" />{t('add')}</button>
-                        <FavoritButton onClick={() => addCardToFavorit(card)} />
+                        <FavoritButton onClick={() => addCardToFavorit(card)} isFavorited={isCardFavorited(card.id) } />
                     </div>
 
                     </div>

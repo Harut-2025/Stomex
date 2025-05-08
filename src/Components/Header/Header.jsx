@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import styles from './Header.module.scss'
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
@@ -12,7 +12,8 @@ import CountInput from '../Ul/CountInput/CountInput.js';
 
 
 
-export default function Header({ buyCard, setBuyCard, favorit, setFavorit }) {
+
+export default function Header({ buyCard, setBuyCard, favorit, setFavorit, totalPrice }) {
   const { t, i18n } = useTranslation();
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -24,10 +25,6 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit }) {
   const [basketOpen, setBasketOpen] = useState(false);
   const [favoritOpen, setFavoritOpen] = useState(false);
 
-  function total() {
-    return buyCard.reduce((sum, item) => sum += Number(item.price), 0);
-  }
-  let totalPrice = total();
 
   return (
 
@@ -60,17 +57,32 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit }) {
                     <img src={cart.img} alt="" className={styles.basketImg} />
                     <div>
                       <p className={styles.basketTitle}>{cart.type} {cart.name}</p>
-                      <CountInput/>
+                      <CountInput />
                     </div>
                     <div>
                       <p className={styles.basketPrice}>{cart.price} {t('money')}</p>
                     </div>
-                    <img src="./Assets/Img/Vector (1).png" alt="" className={styles.delete} onClick={() => { setBuyCard(buyCard => buyCard.filter((_, i) => i !== index)) }} />
+                    <img src="./Assets/Img/Vector (1).png" alt="" className={styles.delete} onClick={() => {
+                      setBuyCard(prev => {
+                        const updated = prev.filter((_, i) => i !== index);
+                        localStorage.setItem('buyCard', JSON.stringify(updated));
+                        return updated;
+                      });
+                    }} />
                   </div>
                 ))}
                 <div className={styles.shopCardFooter}>
                   <div className={styles.product}>{t('product')} {buyCard.length}</div>
                   <div className={styles.general}>{t('general')} {totalPrice} {t('money')}</div>
+                </div>
+                <div className={styles.goToBasket} >
+                  <Link to="/karzina">
+                    <button>
+                      <img src="./Assets/Img/Group 18.png" alt="" />
+                      <p>{t('skip')}</p>
+                    </button>
+                  </Link>
+
                 </div>
               </div>
 
@@ -89,7 +101,13 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit }) {
                       <p className={styles.basketTitle}>{cart.type} {cart.name}</p>
                     </div>
 
-                    <img src="./Assets/Img/Vector (1).png" alt="" className={styles.delete} onClick={() => { setFavorit(favorit => favorit.filter((_, i) => i !== index)) }} />
+                    <img src="./Assets/Img/Vector (1).png" alt="" className={styles.delete} onClick={() => {
+                      setFavorit(prev => {
+                        const updated = prev.filter((_, i) => i !== index);
+                        localStorage.setItem('favorits', JSON.stringify(updated)); 
+                        return updated;
+                      });
+                    }} />
                   </div>
                 ))}
 

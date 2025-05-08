@@ -4,6 +4,9 @@
     "money":"$",
     "product":"Product:",
     "general": "General:",
+    "thatsall":"That's all:",
+    "shipping":"Shipping:",
+    "discount":"Discount:",
     
     
 
@@ -25,6 +28,11 @@
     "add":"Append",
     "jobs":"Job announcements",
     "aboutUs": "About Us",
+    "skip":"Skip to cart",
+    "yourorder":"your order",
+    "teke":"Take advantage of additional features",
+    "ticket":"If you have a discount coupon, gift card or points, select the appropriate item.You can also find out the approximate cost of shipping to your region.",
+    
 
     "dentist":"Dentist",
     "dental":"Dental technician",
@@ -40,10 +48,10 @@
     
 
     "cards":[ 
-        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png", "id":"1"},  
-        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png", "id":"2"},
-        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png", "id":"3"},
-        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png", "id":"4"}
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png","img2":"./Assets/Img/img1.png", "id":"1"},  
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png","img2":"./Assets/Img/img2.png", "id":"2"},
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png","img2":"./Assets/Img/img3.png", "id":"3"},
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png","img2":"./Assets/Img/img4.png", "id":"4"}
 
      ],
      

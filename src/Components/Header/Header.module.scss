@@ -180,6 +180,28 @@ nav {
     display: none;
 }
 
+.goToBasket button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: rgba(196, 196, 196, 1);
+    font-size: 12px;
+    gap: 5px;
+    border: none;
+    cursor: pointer;
+    img{
+        width: 16px;
+        margin-bottom: 5px;
+    }
+}
+.goToBasket{
+    display: flex;
+    justify-content: right;
+   
+}
+
+
+
 @media only screen and (max-width: 1660px) {
     .pagesList a {
         font-size: 14px;

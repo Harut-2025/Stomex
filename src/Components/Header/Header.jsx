@@ -8,7 +8,7 @@ import Leng from '../Ul/Leng/Leng';
 import Basket from '../Basket/Basket.js';
 import { Link } from 'react-router-dom';
 import CountInput from '../Ul/CountInput/CountInput.js';
-
+import User from '../Ul/User/User.jsx'
 
 
 
@@ -116,13 +116,8 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
 
               </div>
             )}
-
-
-
-            <a href=""><img src="./Assets/Img/Group 20.png" alt="" className={styles.user} /></a>
-
+              <User img={'./Assets/Img/Group 20.png'}/>
           </div>
-
         </nav>
         <Link to="/">
           <img src="./Assets/Img/watermark2 1.png" alt="Logo" className={styles.logo} />

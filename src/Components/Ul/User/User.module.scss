@@ -1,0 +1,177 @@
+.authWrapper {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .avatarButton:hover {
+    background-color: #d1d5db;
+  }
+  
+  .avatarIcon {
+    cursor: pointer;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .modalContainer {
+    background: white;
+    border-radius: 1rem;
+    max-width: 448px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #6b7280;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .modalHeader {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #eff6ff, white);
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  .modalLogo {
+    background-color: #2563eb;
+    border-radius: 9999px;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logoIcon {
+    color: white;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  
+  .modalTitle {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111827;
+  }
+  
+  .tabSwitcher {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .tabButton {
+    flex: 1;
+    padding: 1rem;
+    font-weight: 500;
+    color: #6b7280;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tabButton.active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+  }
+  
+  .modalBody {
+    padding: 1.5rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .formSubtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .inputWrapper {
+    position: relative;
+    width: 80%;
+  }
+  
+  .inputIcon {
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    transform: translateY(-50%);
+    color: #9ca3af;
+  }
+  
+  .inputWrapper input {
+    width: 100%;
+    padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    outline: none;
+  }
+  
+  .inputWrapper input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 1px #3b82f6;
+  }
+  
+  .checkboxWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #374151;
+  }
+  .forget{
+    font-size: 14px;
+  }
+  
+  .formFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #1d4ed8;
+  }
+  

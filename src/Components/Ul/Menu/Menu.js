@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import styles from './Menu.module.scss'
 import Leng from '../Leng/Leng.js'
+import User from '../User/User.jsx'
 
 
 const Menu = () => {
@@ -26,7 +27,7 @@ const Menu = () => {
         <div className={styles.menuHeader}>
           <Leng color='white' /> 
           <img src="./Assets/Img/Group 19 (1).png" alt="" />
-          <img src="./Assets/Img/Group 20 (1).png" alt="" />
+          <User img={'./Assets/Img/Group 20 (1).png'}/>
         </div>
         
           <ul className={styles.list}>

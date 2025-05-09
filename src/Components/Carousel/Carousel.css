@@ -14,7 +14,7 @@
 }
 @media only screen and (max-width: 1300px){
     .caruselDiv{
-        background-size: contain;
+        background-size: 150%;
         height: 300px;
     }
 

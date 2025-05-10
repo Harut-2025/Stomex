@@ -33,6 +33,17 @@
     "teke":"Take advantage of additional features",
     "ticket":"If you have a discount coupon, gift card or points, select the appropriate item.You can also find out the approximate cost of shipping to your region.",
     
+    "discountcoupon":"Use discount coupon",
+    "code":"Enter discount coupon code",
+    "giftcard":"Use a gift card",
+    "giftcardcode":"Enter gift card code,",
+    "use":"USE",
+
+    "shippingaddress":"Shipping address",
+    "city":"City",
+    "addres":"Address",
+    "postalcode":"Postal code",
+    
 
     "dentist":"Dentist",
     "dental":"Dental technician",

@@ -1,46 +1,111 @@
 
-.maping{
-    background-image: url('../../../public/Assets/Img/map.png');
-    width: 100%;
-    height: 380px;
-    margin-top: 150px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-bottom: 100px;
+// .maping{
+//     background-image: url('../../../public/Assets/Img/map.png');
+//     width: 100%;
+//     height: 380px;
+//     margin-top: 150px;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     justify-content: center;
+//     align-items: center;
+//     display: flex;
+//     margin-bottom: 100px;
+// }
+// .order{
+//     padding: 0px 50px;
+//     width: fit-content;
+//     background-color: #4272eb;
+//     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+//     p{
+//         font-size: 24px;
+//        font-weight: bold;
+       
+//        font-family: Arial, Helvetica, sans-serif;
+
+//     }
+// }
+// .orderWhite{
+//     padding: 0px 30px;
+//     width: fit-content;
+//     background-color: #4272eb;
+//     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+//     p{
+//         font-size: 24px;
+//        font-weight: bold;
+//        color: white;
+//        font-family: Arial, Helvetica, sans-serif;
+       
+
+//     }
+// }
+// .matherOfOrder{
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+    
+// }
+.maping {
+    position: relative;
 }
-.order{
+
+.mapBlock iframe {
+
+    margin-top: 50px;
+    border: 0;
+    height: 380px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.order {
+
     padding: 0px 50px;
     width: fit-content;
     background-color: #4272eb;
     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-    p{
-        font-size: 24px;
-       font-weight: bold;
-       
-       font-family: Arial, Helvetica, sans-serif;
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+
+        font-family: Arial, Helvetica, sans-serif;
 
     }
 }
-.orderWhite{
+
+.orderWhite {
+
     padding: 0px 30px;
     width: fit-content;
     background-color: #4272eb;
     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-    p{
-        font-size: 24px;
-       font-weight: bold;
-       color: white;
-       font-family: Arial, Helvetica, sans-serif;
-       
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+
 
     }
 }
-.matherOfOrder{
+
+.matherOfOrder {
     display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+    
+
     flex-direction: column;
     gap: 20px;
-    
+
+}
+
+@media only screen and (max-width: 830px) {
+    .orderWhite p {
+        font-style: 16px;
+    }
 }

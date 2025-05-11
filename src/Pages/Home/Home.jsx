@@ -1,16 +1,23 @@
 import React from 'react';
-import Carusel from '../../Carousel/Carousel.js';
+import Carusel from '../../Components/Carousel/Carousel.js';
 import styles from './Home.module.scss';
 import { useTranslation } from 'react-i18next';
-import '../../../i18n.js';
-import Card from '../../Card/Card.js';
-import CardTwo from '../../CardTwo/CardTwo.js';
-import MenuSlider from '../../MenuSlider/MenuSlider.jsx';
-import translationData from './../../../locales/hy/translation.json';
+import '../../i18n.js';
+import Card from '../../Components/Card/Card.js';
+import MenuSlider from '../../Components/MenuSlider/MenuSlider.jsx';
+import translationData from '../../locales/hy/translation.json';
+import Order from '../../Components/Order/Order.jsx'
+import { Link } from 'react-router-dom';
 
-export default function Home({ addCardToBasket, addCardToFavorit }) {
+
+export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
   const { t, i18n } = useTranslation();
   const shoping = i18n.t('shoping', { returnObjects: true });
+  const cardsList = i18n.t('cards', { returnObjects: true });
+  const cardsTwo = i18n.t('cardsTwo', { returnObjects: true });
+
+
+
 
   return (
     <>
@@ -23,7 +30,21 @@ export default function Home({ addCardToBasket, addCardToFavorit }) {
             </a>
             <div>
               <p className={styles.news}>{t('news')}</p>
-              <Card addCardToBasket={addCardToBasket}  addCardToFavorit={addCardToFavorit}/>
+              <div className={styles.cardsDiv}>
+                {cardsList.map((cart) => (
+                  <Link  key={cart.id} to={`/user/${cart.id}`}>
+                  <Card addCardToBasket={addCardToBasket}
+                    addCardToFavorit={addCardToFavorit}
+                    favorit={favorit}
+                    img={cart.img}
+                    type={cart.type}
+                    cardName={cart.name}
+                    info={cart.info}
+                    price={cart.price}
+                    id={cart.id}  
+                  /></Link>
+                ))}
+              </div>
               <p className={styles.shops}>{t('shops')}</p>
             </div>
             <a href="https://www.zendesk.com/" target="blank">
@@ -31,7 +52,7 @@ export default function Home({ addCardToBasket, addCardToFavorit }) {
             </a>
 
           </div>
-          
+
           <MenuSlider firmNames={translationData.firmNames} />
         </div>
 
@@ -51,13 +72,24 @@ export default function Home({ addCardToBasket, addCardToFavorit }) {
       </section>
       <section>
         <div className={styles.shopsCont}>
-        <p className={styles.news}>{t('suggest')}</p>
-        <CardTwo addCardToBasket={addCardToBasket}  addCardToFavorit={addCardToFavorit}/>
+          <p className={styles.news}>{t('suggest')}</p>
+          <div className={styles.cardsDiv}>
+            {cardsTwo.map((cart) => (
+                  <Card addCardToBasket={addCardToBasket}
+                    addCardToFavorit={addCardToFavorit}
+                    favorit={favorit}
+                    img={cart.img}
+                    type={cart.type}
+                    cardName={cart.name}
+                    info={cart.info}
+                    price={cart.price}
+                    id={cart.id} />
+                ))}
+          </div>
         </div>
       </section>
-      <div className={styles.maping}>
-              <img src={t('map')} alt="" />
-      </div>
+      <Order />
+
       <section className={styles.sectionTwo}>
         <div className={styles.containerJobs}>
           <div >

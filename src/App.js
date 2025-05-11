@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import Header from './Components/Header/Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
+import Home from './Pages/Home/Home';
 import { useTranslation } from 'react-i18next';
 import Footer from './Components/Footer/Footer';
 import About from './Pages/About/About';
 import Karzina from './Pages/Karzina/Karzina';
+import ProductPage from './Pages/ProducrPage/ProductPage'
 
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home addCardToBasket={addCardToBasket} addCardToFavorit={addCardToFavorit} favorit={favorit} />} />
           <Route path="/karzina" element={<Karzina buyCard={buyCard} setBuyCard={setBuyCard} totalPrice={totalPrice}/> } />
+           <Route path="/user/:id" element={<ProductPage />} />
           
           {pagesList.map((page, index) => (
             <Route

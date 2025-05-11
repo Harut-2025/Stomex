@@ -5,13 +5,13 @@ import '../../i18n.js'
 import styles from './Card.module.scss'
 import Stars from '../Ul/Stars/Stars.js';
 import FavoritButton from '../Ul/FavoritButton/FavoritButton.js';
-export default function Card({ addCardToBasket , addCardToFavorit, favorit, img, type, cardName, info, price, id, }) {
+export default function Card({ addCardToBasket , addCardToFavorit, favorit, img, type, cardName, info, price, id,}) {
     const { t, i18n } = useTranslation();
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
     
-    const card = { id, img, type, cardName, info, price }
+    const card = { id, img, type, cardName, info, price, }
 
     const isCardFavorited = (id) => favorit.some(item => item.id === id);
 
@@ -19,6 +19,7 @@ export default function Card({ addCardToBasket , addCardToFavorit, favorit, img,
     return (
         <div className={styles.cardsList}>
                 <div className={styles.card}   style={{ backgroundImage: `url(${img})`, }}>
+                   
                     <div className={styles.reiting}>
                         <div className={styles.new}><p>New</p></div>
                         <div className={styles.starsDiv}> <Stars /></div>

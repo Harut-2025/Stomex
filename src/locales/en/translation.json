@@ -7,7 +7,12 @@
     "thatsall":"That's all:",
     "shipping":"Shipping:",
     "discount":"Discount:",
-    
+
+    "manufacturer":"Manufacturer`",
+    "seller":"Seller`",
+    "availability":"Availability`",
+     "available":" Available",
+     "count" :"Quantity",
     
 
     "pages": [
@@ -38,11 +43,13 @@
     "giftcard":"Use a gift card",
     "giftcardcode":"Enter gift card code,",
     "use":"USE",
+    "Addproducts":"Add products using",
 
     "shippingaddress":"Shipping address",
     "city":"City",
     "addres":"Address",
     "postalcode":"Postal code",
+
     
 
     "dentist":"Dentist",

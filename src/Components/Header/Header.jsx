@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState } from 'react'
 import styles from './Header.module.scss'
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
@@ -24,9 +24,11 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
 
   const [basketOpen, setBasketOpen] = useState(false);
   const [favoritOpen, setFavoritOpen] = useState(false);
- 
- console.log(buyCard);
- 
+
+  console.log(buyCard);
+  
+
+
 
   return (
 
@@ -55,25 +57,25 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
 
               <div className={styles.shopCard}>
                 <div className={styles.list}>
-                {buyCard.map((cart, index) => (
-                  <div className={styles.soloDiv} key={index}>
-                    <img src={cart.img} alt="" className={styles.basketImg} />
-                    <div>
-                      <p className={styles.basketTitle}>{cart.type}  {cart.cardName}</p>
-                      <CountInput />
+                  {buyCard.map((cart, index) => (
+                    <div className={styles.soloDiv} key={index}>
+                      <img src={cart.img} alt="" className={styles.basketImg} />
+                      <div>
+                        <p className={styles.basketTitle}>{cart.type}  {cart.cardName}</p>
+                        <CountInput />
+                      </div>
+                      <div>
+                        <p className={styles.basketPrice}>{cart.price} {t('money')}</p>
+                      </div>
+                      <img src="./Assets/Img/Vector (1).png" alt="" className={styles.delete} onClick={() => {
+                        setBuyCard(prev => {
+                          const updated = prev.filter((_, i) => i !== index);
+                          localStorage.setItem('buyCard', JSON.stringify(updated));
+                          return updated;
+                        });
+                      }} />
                     </div>
-                    <div>
-                      <p className={styles.basketPrice}>{cart.price} {t('money')}</p>
-                    </div>
-                    <img src="./Assets/Img/Vector (1).png" alt="" className={styles.delete} onClick={() => {
-                      setBuyCard(prev => {
-                        const updated = prev.filter((_, i) => i !== index);
-                        localStorage.setItem('buyCard', JSON.stringify(updated));
-                        return updated;
-                      });
-                    }} />
-                  </div>
-                ))}
+                  ))}
                 </div>
                 <div className={styles.shopCardFooter}>
                   <div className={styles.product}>{t('product')} {buyCard.length}</div>
@@ -86,11 +88,8 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
                       <p>{t('skip')}</p>
                     </button>
                   </Link>
-
                 </div>
               </div>
-
-
             )}
 
             <div className={styles.basketFav}>
@@ -98,27 +97,33 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
             </div>
             {favoritOpen && (
               <div className={styles.favoritList}>
-                {favorit.map((cart, index) => (
-                  <div className={styles.soloFav} key={index}>
-                    <img src={cart.img} alt="" className={styles.basketImg} />
-                    <div>
-                      <p className={styles.basketTitle}>{cart.type} {cart.cardName}</p>
+                {favorit.length > 0 ? (
+                  favorit.map((cart, index) => (
+                    <div className={styles.soloFav} key={index}>
+                      <img src={cart.img} alt="" className={styles.basketImg} />
+                      <div>
+                        <p className={styles.basketTitle}>{cart.type} {cart.cardName}</p>
+                      </div>
+                      <img
+                        src="./Assets/Img/Vector (1).png"
+                        alt=""
+                        className={styles.delete}
+                        onClick={() => {
+                          setFavorit(prev => {
+                            const updated = prev.filter((_, i) => i !== index);
+                            localStorage.setItem('favorits', JSON.stringify(updated));
+                            return updated;
+                          });
+                        }}
+                      />
                     </div>
-
-                    <img src="./Assets/Img/Vector (1).png" alt="" className={styles.delete} onClick={() => {
-                      setFavorit(prev => {
-                        const updated = prev.filter((_, i) => i !== index);
-                        localStorage.setItem('favorits', JSON.stringify(updated)); 
-                        return updated;
-                      });
-                    }} />
-                  </div>
-                ))}
-
-
+                  ))
+                ) : (
+                  <div>{t('addproducts')} ❤️️</div>
+                )}
               </div>
             )}
-              <User img={'./Assets/Img/Group 20.png'}/>
+            <User img={'./Assets/Img/Group 20.png'} />
           </div>
         </nav>
         <Link to="/">

@@ -11,6 +11,8 @@ export default function Karzina({ buyCard, setBuyCard, totalPrice }) {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
+  console.log(buyCard);
+  
   return (
     <>
       <Carusel />
@@ -25,7 +27,7 @@ export default function Karzina({ buyCard, setBuyCard, totalPrice }) {
             <div className={styles.cardsList}>
               {buyCard.map((cart, index) => (
                 <div className={styles.soloDiv} key={index}>
-                  <img src={cart.img2} alt="" className={styles.basketImg} />
+                  <img src={cart.img} alt="" className={styles.basketImg} />
                   <div>
                     <p className={styles.basketTitle}>{cart.type} {cart.name} {cart.info}</p>
                     <p className={styles.basketPrice}>{cart.price} {t('money')}</p>

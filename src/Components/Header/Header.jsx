@@ -24,7 +24,9 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
 
   const [basketOpen, setBasketOpen] = useState(false);
   const [favoritOpen, setFavoritOpen] = useState(false);
-
+ 
+ console.log(buyCard);
+ 
 
   return (
 
@@ -57,7 +59,7 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
                   <div className={styles.soloDiv} key={index}>
                     <img src={cart.img} alt="" className={styles.basketImg} />
                     <div>
-                      <p className={styles.basketTitle}>{cart.type} {cart.name}</p>
+                      <p className={styles.basketTitle}>{cart.type}  {cart.cardName}</p>
                       <CountInput />
                     </div>
                     <div>
@@ -100,7 +102,7 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
                   <div className={styles.soloFav} key={index}>
                     <img src={cart.img} alt="" className={styles.basketImg} />
                     <div>
-                      <p className={styles.basketTitle}>{cart.type} {cart.name}</p>
+                      <p className={styles.basketTitle}>{cart.type} {cart.cardName}</p>
                     </div>
 
                     <img src="./Assets/Img/Vector (1).png" alt="" className={styles.delete} onClick={() => {

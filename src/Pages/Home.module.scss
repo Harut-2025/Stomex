@@ -15,10 +15,6 @@
     margin-bottom: 150px;
 }
 
-.card {
-    width: 310px;
-    
-}
 
 .information {
     display: flex;
@@ -41,65 +37,13 @@
     gap: 30px;
 
 }
-.new{
-    width: 65px;
-    height: 30px;
+
+
+.cardsDiv{
     display: flex;
-    align-items: center;
+    gap: 23px;
+    flex-wrap: wrap;
     justify-content: center;
-    background-color: #2E5BCF;
-    border-bottom-right-radius: 10px;
-    border: 1px solid #2E5BCF;
-    
-    
-    p{
-        color: white;
-        font-size: 20px;
-    }
-}
-.reiting{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.img{
-    height: 309px;
-    width: 309px;
-}
-.card h3{
-    font-size: 24px;
-    font-weight: 400;
-    width: 230px;
-    margin-left: 17px;
-    
-    
-}
-.cardInfo{
-    font-size: 14px;
-    margin-left: 17px;
-    margin-top: -25px;
-}
-.cardPrice{
-    color: #16AA4D;
-    font-size: 32px;
-    font-weight: 700;
-    margin-left: 17px;
-}
-.add{
-    width: 80%;
-    background-color: #2E5BCF;
-    color: white;
-    height: 48px;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    border-right: 1px solid #C4C4C480;
 }
 .save{
    height: 48px;
@@ -108,10 +52,7 @@
    border: none;
    cursor: pointer;
 }
-.cardButtons{
-    display: flex;
-    align-items: center;
-}
+
 .news{
     color: #666666;
     font-size: 30px;

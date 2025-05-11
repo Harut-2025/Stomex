@@ -11,6 +11,8 @@ import Karzina from './Pages/Karzina/Karzina';
 function App() {
   const [buyCard, setBuyCard] = useState([]);
   const [favorit, setFavorit] = useState([]);
+  
+  
 
   useEffect(() => {
     const savedBuyCard = JSON.parse(localStorage.getItem('buyCard')) || [];

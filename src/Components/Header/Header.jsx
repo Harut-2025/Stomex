@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import styles from './Header.module.scss'
+import React, { useState, useEffect } from 'react';
+import styles from './Header.module.scss';
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
 import Input from '../Ul/Input/Input';
@@ -8,19 +8,30 @@ import Leng from '../Ul/Leng/Leng';
 import Basket from '../Basket/Basket.js';
 import { Link } from 'react-router-dom';
 import CountInput from '../Ul/CountInput/CountInput.js';
-import User from '../Ul/User/User.jsx'
-
-
-
+import User from '../Ul/User/User.jsx';
+import { convertPrice } from '../../Components/Currency/Currency.js';
 
 export default function Header({ buyCard, setBuyCard, favorit, setFavorit, totalPrice }) {
   const { t, i18n } = useTranslation();
+  const [exchangeRate, setExchangeRate] = useState(400);
+  const [convertedTotal, setConvertedTotal] = useState(
+    convertPrice(totalPrice, i18n.language, exchangeRate)
+  );
+    const pagesList = i18n.t('pages', { returnObjects: true })
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setConvertedTotal(convertPrice(totalPrice, lng, exchangeRate));
   };
-  const pagesList = i18n.t('pages', { returnObjects: true })
-  let size = buyCard.length
-  let favsize = favorit.length
+
+  useEffect(() => {
+    // You can fetch real exchange rate here from an API
+    // For now using static 400 AMD to 1 USD
+    setConvertedTotal(convertPrice(totalPrice, i18n.language, exchangeRate));
+  }, [totalPrice, i18n.language, exchangeRate]);
+
+  let size = buyCard.length;
+  let favsize = favorit.length;
 
   const [basketOpen, setBasketOpen] = useState(false);
   const [favoritOpen, setFavoritOpen] = useState(false);
@@ -45,9 +56,10 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
             <p className={styles.phoneNumber}> +374 33-25-01-25</p>
           </div>
           <Input />
-          <div className={styles.icons}>
-            <p className={styles.iconsInfo}>{buyCard.length}/{totalPrice} {t('value')}</p>
-
+      <div className={styles.icons}>
+        <p className={styles.iconsInfo}>
+          {buyCard.length}/{convertedTotal.value} {convertedTotal.currency}
+        </p>
             <div className={styles.basketShop}> <Basket count={size} onClick={() => setBasketOpen(!basketOpen)} img={"./Assets/Img/Group 18.png"} /></div>
             {basketOpen && (
 
@@ -73,10 +85,12 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
                     </div>
                   ))}
                 </div>
-                <div className={styles.shopCardFooter}>
-                  <div className={styles.product}>{t('product')} {buyCard.length}</div>
-                  <div className={styles.general}>{t('general')} {totalPrice} {t('money')}</div>
-                </div>
+        <div className={styles.shopCardFooter}>
+          <div className={styles.product}>{t('product')} {buyCard.length}</div>
+          <div className={styles.general}>
+            {t('general')} {convertedTotal.value} {convertedTotal.currency}
+          </div>
+        </div>
                 <div className={styles.goToBasket} >
                   <Link to="/karzina">
                     <button>

@@ -7,6 +7,8 @@ import Footer from './Components/Footer/Footer';
 import About from './Pages/About/About';
 import Karzina from './Pages/Karzina/Karzina';
 import ProductPage from './Pages/ProducrPage/ProductPage'
+import { CurrencyProvider } from './Components/Currency/CurrencyContext';
+
 
 
 function App() {
@@ -64,6 +66,7 @@ function App() {
 
 
   return (
+    <CurrencyProvider>
     <Router>
       <div className="App">
         <Header addCardToBasket={addCardToBasket} buyCard={buyCard} setBuyCard={setBuyCard} favorit={favorit} setFavorit={setFavorit} totalPrice={totalPrice} />
@@ -85,7 +88,7 @@ function App() {
 
       </div>
     </Router>
-
+    </CurrencyProvider>
   );
 
 }

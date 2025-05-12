@@ -32,7 +32,6 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
               <p className={styles.news}>{t('news')}</p>
               <div className={styles.cardsDiv}>
                 {cardsList.map((cart) => (
-                  <Link  key={cart.id} to={`/user/${cart.id}`}>
                   <Card addCardToBasket={addCardToBasket}
                     addCardToFavorit={addCardToFavorit}
                     favorit={favorit}
@@ -41,8 +40,9 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
                     cardName={cart.name}
                     info={cart.info}
                     price={cart.price}
-                    id={cart.id}  
-                  /></Link>
+                    id={cart.id} 
+                    cartid={cart.id} 
+                  />
                 ))}
               </div>
               <p className={styles.shops}>{t('shops')}</p>
@@ -83,7 +83,9 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
                     cardName={cart.name}
                     info={cart.info}
                     price={cart.price}
-                    id={cart.id} />
+                    id={cart.id}
+                    cartid={cart.id} 
+                    />
                 ))}
           </div>
         </div>

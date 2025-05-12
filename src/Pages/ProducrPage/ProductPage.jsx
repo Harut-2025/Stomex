@@ -5,6 +5,7 @@ import styles from './ProductPage.module.scss'
 import Slider from '../../Components/Ul/Slider/Slider';
 import Stars from '../../Components/Ul/Stars/Stars'
 import CountInput from '../../Components/Ul/CountInput/CountInput'
+import BasketButton from '../../Components/Ul/BasketButton/BasketButton'
 
 function ProductPage() {
     const { t, i18n } = useTranslation();
@@ -29,7 +30,7 @@ function ProductPage() {
                 <div className={styles.container}>
                     <p className={styles.market}>Alfa Stom → {product.name}</p>
                     <div className={styles.flex}>
-                        <Slider img={product.img2} />
+                        <Slider img2={product.img2} img3={product.img3} img4={product.img4} />
                         <div>
                             <Stars/>
                             <h1 className={styles.name}>{product.type} {product.name}</h1>
@@ -41,7 +42,10 @@ function ProductPage() {
                             </div>
                             
                             <p className={styles.count}>{t('count')}</p>
-                            <CountInput/>
+                            <CountInput />
+                            <BasketButton className={styles.add} />
+                            
+                            
                         </div>
                     </div>
                 </div>

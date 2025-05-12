@@ -25,11 +25,7 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
   const [basketOpen, setBasketOpen] = useState(false);
   const [favoritOpen, setFavoritOpen] = useState(false);
 
-  console.log(buyCard);
   
-
-
-
   return (
 
     <header >

@@ -4,8 +4,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 
 
-export default function Slider({img}) {
-const images = [img, img, img];
+export default function Slider({img2,img3,img4}) {
+const images = [img2, img3, img4];
 
 
 
@@ -42,7 +42,7 @@ const images = [img, img, img];
         {images.map((image, index) => (
           <img
             key={index}
-            src={`/${images[currentIndex]}`}
+            src={`/${image}`}
             alt={`Thumb ${index}`}
             className={`${styles.thumbnail} ${
               index === currentIndex ? styles.active : ""

@@ -66,22 +66,22 @@
     
 
     "cards":[ 
-        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png","img2":"./Assets/Img/img1.png", "id":"1"},  
-        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png","img2":"./Assets/Img/img2.png", "id":"2"},
-        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png","img2":"./Assets/Img/img3.png", "id":"3"},
-        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png","img2":"./Assets/Img/img4.png", "id":"4"}
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png","img2":"./Assets/Img/img1.png","img3":"./Assets/Img/img1.1.jpg","img4":"./Assets/Img/img1.2.webp", "id":"1"},  
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png","img2":"./Assets/Img/img2.png", "img3":"./Assets/Img/img2.1.jpg", "img4":"./Assets/Img/2.2.webp", "id":"2"},
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png","img2":"./Assets/Img/img3.png","img3":"./Assets/Img/img3.1.jpg","img4":"./Assets/Img/img3.2.webp", "id":"3"},
+        {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png","img2":"./Assets/Img/img4.png","img3":"./Assets/Img/img4.1.jpg","img4":"./Assets/Img/img4.2.jpg", "id":"4"}
 
      ],
      
     "cardsTwo":[ 
-      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png", "id":"1"},  
-      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png", "id":"2"},
-      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png", "id":"3"},
-      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png", "id":"4"},
-      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png", "id":"5"},
-      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png", "id":"6"},  
-      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png", "id":"7"},
-      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png", "id":"8"}
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png","img2":"./Assets/Img/img1.png","img3":"./Assets/Img/img1.1.jpg","img4":"./Assets/Img/img1.2.webp", "id":"1"},  
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png","img2":"./Assets/Img/img2.png", "img3":"./Assets/Img/img2.1.jpg", "img4":"./Assets/Img/2.2.webp", "id":"2"},
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png","img2":"./Assets/Img/img3.png","img3":"./Assets/Img/img3.1.jpg","img4":"./Assets/Img/img3.2.webp",  "id":"3"},
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png","img2":"./Assets/Img/img4.png","img3":"./Assets/Img/img4.1.jpg","img4":"/Assets/Img/img4.2.jpg", "id":"4"},
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card2.png","img2":"./Assets/Img/img2.png","img3":"./Assets/Img/img2.1.jpg","img4":"./Assets/Img/2.2.webp", "id":"2"},
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card1.png","img2":"./Assets/Img/img1.png", "img3":"./Assets/Img/img1.1.jpg","img4":"./Assets/Img/img1.2.webp", "id":"1"},  
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card3.png","img2":"./Assets/Img/img3.png","img3":"./Assets/Img/img3.1.jpg","img4":"./Assets/Img/img3.2.webp",  "id":"3"},
+      {"type":"Arc","name":"Co-Cr Edgewise-Multiphase Blue","price":"3.72","info":"square, rectangular cross-section AO","img":"./Assets/Img/Card4.png","img2":"./Assets/Img/img4.png","img3":"./Assets/Img/img4.1.jpg","img4":"./Assets/Img/img4.2.jpg", "id":"4"}
 
    ],
 "firmNames": [
@@ -154,7 +154,30 @@
 ],
 "footerFour":[
   {"name":"StomEx © 2021 Dental Delivery System"}
-]
+],
+
+  "auth": {
+    "welcome": "Welcome",
+    "signIn": "Sign In",
+    "register": "Register",
+    "welcomeBack": "Welcome back! Please sign in to your account",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "signingIn": "Signing In...",
+    "createAccount": "Create a new account to get started",
+    "name": "Name",
+    "namePlaceholder": "John Doe",
+    "confirmPassword": "Confirm Password",
+    "agreeTerms": "I agree to the Terms and Privacy Policy",
+    "creatingAccount": "Creating Account...",
+    "passwordsDontMatch": "Passwords don't match",
+    "enterEmailFirst": "Please enter your email first",
+    "passwordResetSent": "Password reset email sent! Check your inbox.",
+    "profile": "Profile"
+  }
 
 
 }

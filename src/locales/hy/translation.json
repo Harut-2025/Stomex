@@ -1,253 +1,373 @@
 {
-    "leng": "ՀԱՅ",
-    "value": "AMD",
-    "money": "֏",
-    "product": "Ապրանք:",
-    "general": "Ընդհանուր:",
-    "thatsall":"Ընդամենը:",
-    "shipping":"Առաքում:",
-    "discount":"Զեղչ: ",
-
-    "manufacturer":"Արտադրող՝ ",
-    "seller":"Վաճառող՝ ",
-    "availability":"Առկայություն՝",
-    "available":"Առկա է",
-    "count" :"Քանակ",
-  
-    "pages": [
-      { "name": "Խանութներ" },
-      { "name": "Մեր մասին","path":"/about" },
-      { "name": "Թերապիա" },
-      { "name": "Էնդոդոնտիա" },
-      { "name": "Օրթոպեդիա" },
-      { "name": "Օրթոդոնտիա" },
-      { "name": "Վիրաբուժություն/Պարադոնտոլոգիա" },
-      { "name": "Սարքավորումներ" },
-      { "name": "Լաբորատորիա" },
-      { "name": "Գրքեր" }
-    ],
-    "suggest":"Խորհուրդ է տրվում",
-    "news": "ՆՈՐՈՒՅԹՆԵՐ",
-    "shops": "Խանութներ",
-    "add": "ԱՎԵԼԱՑՆԵԼ",
-    "jobs":"Աշխատանքի հայտարարություններ",
-    "aboutUs": "Մեր մասին",
-    "skip":"Անցնել զամբյուղը",
-    "yourorder":"ձեր պատվերը",
-    "take":"Օգտվեք հավելյալ հնարավորություններից",
-    "ticket":"Եթե դուք ունեք զեղչի կտրոն, նվեր քարտ կամ միավորներ, ընտրեք համապատասխան կետը։Դուք նաև կարող եք մոտավորապես իմանալ առաքման արժեքը դեպի Ձեր տարածաշրջան։",
-
-    "dentist":"Ատամնաբույժ",
-    "dental":"Ատամնատեխնիկ",
-    "orthodontist":"Օրտոդոնտ",
-    "doctor":"Բժիշկ",
-
-    "discountcoupon":"Օգտագործել զեղչի կտրոն",
-    "code":"Մուտքագրեք զեղչի կտրոնի ծածկագիրը",
-    "giftcard":"Օգտագործել նվեր քարտ",
-    "giftcardcode":"Մուտքագրեք նվեր քարտի ծածկագիրը",
-    "use":"ՕԳՏԱԳՈՐԾԵԼ",
-    "addproducts":"Ավելացնել ապրանքներ օգտագործելով",
-    
-    "shippingaddress":"Առաաքման հասցե",
-    "city":"Քաղաք",
-    "addres":"Հասցե",
-    "postalcode":"Փոստի կոդ",
-
-    "orderAll":"ԱՌԱՔՈՒՄ ԵՆՔ ԱՆԿԱԽ",
-    "orderMassa":"ԱՊՐԱՆՔԻ ԾԱՎԱԼԻՑ",
-    "orderPrice":"ԱՐԺԵՔԸ ՝ 400 Դ",
-   
-
-
-    "firmNames": [
-      {
-        "img": "./Assets/img/arm.png",
-        "firm": "Alfa Stom",
-        "label": "Գործունեություն՝ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Պռոշյան 28/2, Երևան, Հայաստան\nՀեռ.՝ (+374) 010 27 92 27\nԱշխ. ժամեր՝ Երկուշաբթի - Շաբաթ՝ 10։00 - 22։00"
-      },
-      {
-        "img": "/assets/img/alfa.png",
-        "firm": "ArmDental",
-        "label": "Գործունեություն՝ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Մաշտոցի 5, Երևան, Հայաստան\nՀեռ.՝ (+374)10 53 44 55, (+374)98 11 16 11\nԱշխ. ժամեր՝ Երկուշաբթի - ՈՒրբաթ` 10:00 -19:00 , Շաբաթ՝ 10։00 - 18։00"
-      },
-      {
-        "img": "/assets/img/den.png",
-        "firm": "Dentax",
-        "label": "Գործունեություն։ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Հ. Պարոնյան 9, Երևան, Հայաստան\nՀեռ.՝ (+374) 12 55 53 00\nԱշխ. ժամեր՝ Երկուշաբթի - ՈՒրբաթ` 9:00 -17:00"
-      },
-            
-      {
-        "img": "./Assets/img/arm.png",
-        "firm": "Alfa Stom",
-        "label": "Գործունեություն՝ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Պռոշյան 28/2, Երևան, Հայաստան\nՀեռ.՝ (+374) 010 27 92 27\nԱշխ. ժամեր՝ Երկուշաբթի - Շաբաթ՝ 10։00 - 22։00"
-      },
-      {
-        "img": "/assets/img/alfa.png",
-        "firm": "ArmDental",
-        "label": "Գործունեություն՝ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Մաշտոցի 5, Երևան, Հայաստան\nՀեռ.՝ (+374)10 53 44 55, (+374)98 11 16 11\nԱշխ. ժամեր՝ Երկուշաբթի - ՈՒրբաթ` 10:00 -19:00 , Շաբաթ՝ 10։00 - 18։00"
-      },
-      {
-        "img": "/assets/img/den.png",
-        "firm": "Dentax",
-        "label": "Գործունեություն։ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Հ. Պարոնյան 9, Երևան, Հայաստան\nՀեռ.՝ (+374) 12 55 53 00\nԱշխ. ժամեր՝ Երկուշաբթի - ՈՒրբաթ` 9:00 -17:00"
-      }
-    ],
-  
-    "cards": [
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card1.png",
-        "img2":"./Assets/Img/img1.png",
-        "id": "1"
-      },
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card2.png",
-        "img2":"./Assets/Img/img2.png",
-        "id": "2"
-      },
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card3.png",
-        "img2":"./Assets/Img/img3.png",
-        "id": "3"
-      },
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card4.png",
-        "img2":"./Assets/Img/img4.png",
-        "id": "4"
-      }
-    ],
-    "cardsTwo": [
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card1.png",
-        "id": "1"
-      },
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card2.png",
-        "id": "2"
-      },
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card3.png",
-        "id": "3"
-      },
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card4.png",
-        "id": "4"
-      },
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card2.png",
-        "id": "5"
-      },
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card1.png",
-        "id": "6"
-      },
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card3.png",
-        "id": "7"
-      },
-      {
-        "type": "Աղեղ",
-        "name": "Co-Cr Edgewise-Multiphase Blue",
-        "price": "1450 ",
-        "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-        "img": "./Assets/Img/Card4.png",
-        "id": "8"
-      }
-    
-    ],
-    "shoping": [
-        { "img": "./Assets/Img/bohem.png" },
-        { "img": "./Assets/Img/skamed.png" },
-        { "img": "./Assets/Img/dental.png" },
-        { "img": "./Assets/Img/bohem.png" },
-        { "img": "./Assets/Img/skamed.png" },
-        { "img": "./Assets/Img/stom.png" },
-        { "img": "./Assets/Img/skamed.png" },
-        { "img": "./Assets/Img/dental.png" },
-        { "img": "./Assets/Img/stom.png" },
-        { "img": "./Assets/Img/skamed.png" }
-      ],
-
-
-
-      "footerpages":[
-        {"name":"Տեղեկատվություն"},
-        {"name":"Գովազդ"},
-        {"name":"Ստոմատոլոգիական թեստ ;)"},
-        {"name":"Մեր մասին"},
-        {"name":"Պայմաններ"},
-        {"name":"Առաքում"},
-        {"name":"Ծառայություններ"}
-
-    ],
-    "footerpagesOne":[
-        {"name":"Հաճախորդների սպասարկում"},
-        {"name":"Հետադարձ կապ"},
-        {"name":"Ապրանքի վերադարձներ"},
-        {"name":"Կայքի քարտեզ"}
-
-    ],
-    "footerpagesTwo":[
-        {"name":"Լրացուցիչ"},
-        {"name":"Ապրանքանիշեր"},
-        {"name":"Նվեր քարտեր"},
-        {"name":"Գործընկերներ"},
-        {"name":"Զեղչեր"}
-    ],
-    "footerpagesThree":[
-        {"name":"Իմ պահոցը"},
-        {"name":"Իմ պահոցը"},
-        {"name":"Պատվերների պատմություն"},
-        {"name":"Էջանշաններ"},
-        {"name":"Նորություններ"}
-    ],
-    "footerFour":[
-        {"name":"StomEx © 2021 Ստոմատոլոգիական առաքման համակարգ"}
-    ]
-      
+  "leng": "ՀԱՅ",
+  "value": "AMD",
+  "money": "֏",
+  "product": "Ապրանք:",
+  "general": "Ընդհանուր:",
+  "thatsall": "Ընդամենը:",
+  "shipping": "Առաքում:",
+  "discount": "Զեղչ: ",
+  "manufacturer": "Արտադրող՝ ",
+  "seller": "Վաճառող՝ ",
+  "availability": "Առկայություն՝",
+  "available": "Առկա է",
+  "count": "Քանակ",
+  "pages": [
+    {
+      "name": "Խանութներ"
+    },
+    {
+      "name": "Մեր մասին",
+      "path": "/about"
+    },
+    {
+      "name": "Թերապիա"
+    },
+    {
+      "name": "Էնդոդոնտիա"
+    },
+    {
+      "name": "Օրթոպեդիա"
+    },
+    {
+      "name": "Օրթոդոնտիա"
+    },
+    {
+      "name": "Վիրաբուժություն/Պարադոնտոլոգիա"
+    },
+    {
+      "name": "Սարքավորումներ"
+    },
+    {
+      "name": "Լաբորատորիա"
+    },
+    {
+      "name": "Գրքեր"
+    }
+  ],
+  "suggest": "Խորհուրդ է տրվում",
+  "news": "ՆՈՐՈՒՅԹՆԵՐ",
+  "shops": "Խանութներ",
+  "add": "ԱՎԵԼԱՑՆԵԼ",
+  "jobs": "Աշխատանքի հայտարարություններ",
+  "aboutUs": "Մեր մասին",
+  "skip": "Անցնել զամբյուղը",
+  "yourorder": "ձեր պատվերը",
+  "take": "Օգտվեք հավելյալ հնարավորություններից",
+  "ticket": "Եթե դուք ունեք զեղչի կտրոն, նվեր քարտ կամ միավորներ, ընտրեք համապատասխան կետը։Դուք նաև կարող եք մոտավորապես իմանալ առաքման արժեքը դեպի Ձեր տարածաշրջան։",
+  "dentist": "Ատամնաբույժ",
+  "dental": "Ատամնատեխնիկ",
+  "orthodontist": "Օրտոդոնտ",
+  "doctor": "Բժիշկ",
+  "discountcoupon": "Օգտագործել զեղչի կտրոն",
+  "code": "Մուտքագրեք զեղչի կտրոնի ծածկագիրը",
+  "giftcard": "Օգտագործել նվեր քարտ",
+  "giftcardcode": "Մուտքագրեք նվեր քարտի ծածկագիրը",
+  "use": "ՕԳՏԱԳՈՐԾԵԼ",
+  "addproducts": "Ավելացնել ապրանքներ օգտագործելով",
+  "shippingaddress": "Առաաքման հասցե",
+  "city": "Քաղաք",
+  "addres": "Հասցե",
+  "postalcode": "Փոստի կոդ",
+  "orderAll": "ԱՌԱՔՈՒՄ ԵՆՔ ԱՆԿԱԽ",
+  "orderMassa": "ԱՊՐԱՆՔԻ ԾԱՎԱԼԻՑ",
+  "orderPrice": "ԱՐԺԵՔԸ ՝ 400 Դ",
+  "firmNames": [
+    {
+      "img": "./Assets/img/arm.png",
+      "firm": "Alfa Stom",
+      "label": "Գործունեություն՝ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Պռոշյան 28/2, Երևան, Հայաստան\nՀեռ.՝ (+374) 010 27 92 27\nԱշխ. ժամեր՝ Երկուշաբթի - Շաբաթ՝ 10։00 - 22։00"
+    },
+    {
+      "img": "/assets/img/alfa.png",
+      "firm": "ArmDental",
+      "label": "Գործունեություն՝ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Մաշտոցի 5, Երևան, Հայաստան\nՀեռ.՝ (+374)10 53 44 55, (+374)98 11 16 11\nԱշխ. ժամեր՝ Երկուշաբթի - ՈՒրբաթ` 10:00 -19:00 , Շաբաթ՝ 10։00 - 18։00"
+    },
+    {
+      "img": "/assets/img/den.png",
+      "firm": "Dentax",
+      "label": "Գործունեություն։ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Հ. Պարոնյան 9, Երևան, Հայաստան\nՀեռ.՝ (+374) 12 55 53 00\nԱշխ. ժամեր՝ Երկուշաբթի - ՈՒրբաթ` 9:00 -17:00"
+    },
+    {
+      "img": "./Assets/img/arm.png",
+      "firm": "Alfa Stom",
+      "label": "Գործունեություն՝ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Պռոշյան 28/2, Երևան, Հայաստան\nՀեռ.՝ (+374) 010 27 92 27\nԱշխ. ժամեր՝ Երկուշաբթի - Շաբաթ՝ 10։00 - 22։00"
+    },
+    {
+      "img": "/assets/img/alfa.png",
+      "firm": "ArmDental",
+      "label": "Գործունեություն՝ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Մաշտոցի 5, Երևան, Հայաստան\nՀեռ.՝ (+374)10 53 44 55, (+374)98 11 16 11\nԱշխ. ժամեր՝ Երկուշաբթի - ՈՒրբաթ` 10:00 -19:00 , Շաբաթ՝ 10։00 - 18։00"
+    },
+    {
+      "img": "/assets/img/den.png",
+      "firm": "Dentax",
+      "label": "Գործունեություն։ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Հ. Պարոնյան 9, Երևան, Հայաստան\nՀեռ.՝ (+374) 12 55 53 00\nԱշխ. ժամեր՝ Երկուշաբթի - ՈՒրբաթ` 9:00 -17:00"
+    }
+  ],
+  "cards": [
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card1.png",
+      "img2": "./Assets/Img/img1.png",
+      "img3": "./Assets/Img/img1.1.jpg",
+      "img4": "./Assets/Img/img1.2.webp",
+      "id": "1"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card2.png",
+      "img2": "./Assets/Img/img2.png",
+      "img3": "./Assets/Img/img2.1.jpg",
+      "img4": "./Assets/Img/2.2.webp",
+      "id": "2"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card3.png",
+      "img2": "./Assets/Img/img3.png",
+      "img3": "./Assets/Img/img3.1.jpg",
+      "img4": "./Assets/Img/img3.2.webp",
+      "id": "3"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card4.png",
+      "img2": "./Assets/Img/img4.png",
+      "img3": "./Assets/Img/img4.1.jpg",
+      "img4": "./Assets/Img/img4.2.jpg",
+      "id": "4"
+    }
+  ],
+  "cardsTwo": [
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card1.png",
+      "img2": "./Assets/Img/img1.png",
+      "img3": "./Assets/Img/img1.1.jpg",
+      "img4": "./Assets/Img/img1.2.webp",
+      "id": "1"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card2.png",
+      "img2": "./Assets/Img/img2.png",
+      "img3": "./Assets/Img/img2.1.jpg",
+      "img4": "./Assets/Img/2.2.webp",
+      "id": "2"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card3.png",
+      "img2": "./Assets/Img/img3.png",
+      "img3": "./Assets/Img/img3.1.jpg",
+      "img4": "./Assets/Img/img3.2.webp",
+      "id": "3"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card4.png",
+      "img2": "./Assets/Img/img4.png",
+      "img3": "./Assets/Img/img4.1.jpg",
+      "img4": "./Assets/Img/img4.2.jpg",
+      "id": "4"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card2.png",
+      "img2": "./Assets/Img/img2.png",
+      "img3": "./Assets/Img/img2.1.jpg",
+      "img4": "./Assets/Img/2.2.webp",
+      "id": "2"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card1.png",
+      "img2": "./Assets/Img/img1.png",
+      "img3": "./Assets/Img/img1.1.jpg",
+      "img4": "./Assets/Img/img1.2.webp",
+      "id": "1"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card3.png",
+      "img2": "./Assets/Img/img3.png",
+      "img3": "./Assets/Img/img3.1.jpg",
+      "img4": "./Assets/Img/img3.2.webp",
+      "id": "3"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Co-Cr Edgewise-Multiphase Blue",
+      "price": "1450 ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
+      "img": "./Assets/Img/Card4.png",
+      "img2": "./Assets/Img/img4.png",
+      "img3": "./Assets/Img/img4.1.jpg",
+      "img4": "./Assets/Img/img4.2.jpg",
+      "id": "4"
+    }
+  ],
+  "shoping": [
+    {
+      "img": "./Assets/Img/bohem.png"
+    },
+    {
+      "img": "./Assets/Img/skamed.png"
+    },
+    {
+      "img": "./Assets/Img/dental.png"
+    },
+    {
+      "img": "./Assets/Img/bohem.png"
+    },
+    {
+      "img": "./Assets/Img/skamed.png"
+    },
+    {
+      "img": "./Assets/Img/stom.png"
+    },
+    {
+      "img": "./Assets/Img/skamed.png"
+    },
+    {
+      "img": "./Assets/Img/dental.png"
+    },
+    {
+      "img": "./Assets/Img/stom.png"
+    },
+    {
+      "img": "./Assets/Img/skamed.png"
+    }
+  ],
+  "footerpages": [
+    {
+      "name": "Տեղեկատվություն"
+    },
+    {
+      "name": "Գովազդ"
+    },
+    {
+      "name": "Ստոմատոլոգիական թեստ ;)"
+    },
+    {
+      "name": "Մեր մասին"
+    },
+    {
+      "name": "Պայմաններ"
+    },
+    {
+      "name": "Առաքում"
+    },
+    {
+      "name": "Ծառայություններ"
+    }
+  ],
+  "footerpagesOne": [
+    {
+      "name": "Հաճախորդների սպասարկում"
+    },
+    {
+      "name": "Հետադարձ կապ"
+    },
+    {
+      "name": "Ապրանքի վերադարձներ"
+    },
+    {
+      "name": "Կայքի քարտեզ"
+    }
+  ],
+  "footerpagesTwo": [
+    {
+      "name": "Լրացուցիչ"
+    },
+    {
+      "name": "Ապրանքանիշեր"
+    },
+    {
+      "name": "Նվեր քարտեր"
+    },
+    {
+      "name": "Գործընկերներ"
+    },
+    {
+      "name": "Զեղչեր"
+    }
+  ],
+  "footerpagesThree": [
+    {
+      "name": "Իմ պահոցը"
+    },
+    {
+      "name": "Իմ պահոցը"
+    },
+    {
+      "name": "Պատվերների պատմություն"
+    },
+    {
+      "name": "Էջանշաններ"
+    },
+    {
+      "name": "Նորություններ"
+    }
+  ],
+  "footerFour": [
+    {
+      "name": "StomEx © 2021 Ստոմատոլոգիական առաքման համակարգ"
+    }
+  ],
+  "auth": {
+    "welcome": "Բարի գալուստ",
+    "signIn": "Մուտք",
+    "register": "Գրանցում",
+    "welcomeBack": "Բարի վերադարձ! Մուտքագրեք ձեր հաշիվ",
+    "email": "Էլ․ փոստ",
+    "emailPlaceholder": "ձեր@էլ․փոստը․com",
+    "password": "Գաղտնաբառ",
+    "rememberMe": "Հիշել ինձ",
+    "forgotPassword": "Մոռացել եք գաղտնաբառը?",
+    "signingIn": "Մուտքագրվում է...",
+    "createAccount": "Ստեղծեք նոր հաշիվ",
+    "name": "Անուն",
+    "namePlaceholder": "Անուն Ազգանուն",
+    "confirmPassword": "Հաստատեք գաղտնաբառը",
+    "agreeTerms": "Ես համաձայն եմ Օգտագործման պայմաններին և Գաղտնիության քաղաքականությանը",
+    "creatingAccount": "Հաշիվը ստեղծվում է...",
+    "passwordsDontMatch": "Գաղտնաբառերը չեն համընկնում",
+    "enterEmailFirst": "Նախ մուտքագրեք ձեր էլ․ փոստը",
+    "passwordResetSent": "Գաղտնաբառի վերականգնման հաղորդագրություն ուղարկված է: Ստուգեք ձեր էլ․ փոստը:",
+    "profile": "Անձնական էջ"
   }
-  
+}

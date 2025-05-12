@@ -58,10 +58,14 @@
     
     
 }
+h3{
+    color: black;
+}
 .cardInfo{
     font-size: 14px;
     margin-left: 17px;
     margin-top: 50px;
+    color: black;
     
 }
 .cardPrice{
@@ -71,7 +75,12 @@
     margin-left: 17px;
     margin-top: -20px;
 }
-.add{
+ .cardButtons{
+    display: flex;
+    align-items: center;
+}
+
+.append{
     width: 80%;
     background-color: #2E5BCF;
     color: white;
@@ -85,8 +94,4 @@
     font-weight: 600;
     cursor: pointer;
     border-right: 1px solid #C4C4C480;
-}
- .cardButtons{
-    display: flex;
-    align-items: center;
 }

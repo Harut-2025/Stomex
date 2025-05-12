@@ -12,25 +12,32 @@
     cursor: pointer;
   }
   
-  .modalOverlay {
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 50;
-  }
-  
-  .modalContainer {
-    background: white;
-    border-radius: 1rem;
-    max-width: 448px;
-    width: 100%;
-    position: relative;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  }
-  
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContainer {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+  .avatarIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
   .closeButton {
     position: absolute;
     top: 1rem;

@@ -25,8 +25,7 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
   };
 
   useEffect(() => {
-    // You can fetch real exchange rate here from an API
-    // For now using static 400 AMD to 1 USD
+
     setConvertedTotal(convertPrice(totalPrice, i18n.language, exchangeRate));
   }, [totalPrice, i18n.language, exchangeRate]);
 

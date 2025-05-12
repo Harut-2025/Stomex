@@ -1,4 +1,3 @@
-// src/context/CurrencyContext.js
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 

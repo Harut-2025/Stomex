@@ -1,11 +1,16 @@
 .container{
     width: 80%;
     margin: auto; 
+    
 }
+
 .flex{
     display: flex;
     gap: 150px;
     margin-top: 88px;
+    justify-content: center;
+
+    
 }
 .name{
     color: rgba(102, 102, 102, 1);
@@ -48,4 +53,105 @@ span{
     font-size: 20px;
     font-weight: 600;
     margin-top: 90px;
+}
+.otherProduct{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(102, 102, 102, 1);
+    text-transform: uppercase;
+}
+.cardsDiv{
+    display: flex;
+    gap: 23px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.containerTwo{
+    width: 51%;
+    margin: auto;
+}
+.shereDiv{
+    display: flex;
+    align-items: center;
+}
+.shere{
+    color: rgba(102, 102, 102, 1);
+    font-size: 22px;
+    font-weight: 400;
+}
+.starshere{
+    display: flex;
+    align-items: center;
+    gap: 114px;
+}
+@media only screen and (max-width: 1505px){
+.flex{
+    gap: 50px;
+
+}
+.name{
+    font-size: 30px;
+}
+.price{
+    font-size: 50px;
+}
+.add{
+    margin-top: 75px;
+}
+}
+@media only screen and (max-width: 1265px){
+.flex{
+    gap: 15px;
+
+}
+.name{
+    font-size: 27px;
+}
+.price{
+    font-size: 45px;
+}
+.add{
+    margin-top: 32px;
+}
+.count{
+    font-size: 30px;
+}
+}
+@media only screen and (max-width: 1112px){
+.flex{
+    gap: 15px;
+    flex-direction: column-reverse;
+    margin-top: 0;
+
+}
+.starshere{
+    gap: 0;
+    justify-content: space-between;
+}
+.market{
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.smallDiv{
+    display: none;
+}
+.add{
+    display: none;
+}
+.count{
+    display: none;
+}
+.countDiv{
+    display: none;
+}
+}
+@media only screen and (max-width: 480px){
+.name{
+    font-size: 22px;
+}
+.price{
+    font-size: 40px;
+}
+
 }

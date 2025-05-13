@@ -73,7 +73,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home addCardToBasket={addCardToBasket} addCardToFavorit={addCardToFavorit} favorit={favorit} />} />
           <Route path="/karzina" element={<Karzina buyCard={buyCard} setBuyCard={setBuyCard} totalPrice={totalPrice}/> } />
-           <Route path="/user/:id" element={<ProductPage />} />
+           <Route path="/user/:id" element={<ProductPage addCardToBasket={addCardToBasket} addCardToFavorit={addCardToFavorit} favorit={favorit}/>} />
           
           {pagesList.map((page, index) => (
             <Route

@@ -7,6 +7,8 @@
     "thatsall":"That's all:",
     "shipping":"Shipping:",
     "discount":"Discount:",
+    "shere":"Shere",
+    "otherproduct":"Other products",
 
     "manufacturer":"Manufacturer`",
     "seller":"Seller`",
@@ -90,7 +92,7 @@
       "type": "Arc",
       "name": "Stainless Steel Precision Round",
       "price": "3.95",
-      "info": "high durability round wire for initial alignment",
+      "info": "high durability round wire for  alignment",
       "img": "./Assets/Img/Card3.png",
       "img2": "./Assets/Img/img3.png",
       "img3": "./Assets/Img/img3.1.jpg",

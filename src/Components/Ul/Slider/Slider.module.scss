@@ -45,3 +45,89 @@
   opacity: 1;
   border-color: #007bff;
 }
+@media only screen and (max-width: 1505px){
+.mainImage{
+  width: 450px;
+  height: 450px;
+}
+.thumbnail{
+  width: 143px;
+  height: 143px;
+}
+
+}
+@media only screen and (max-width: 1265px){
+.mainImage{
+  width: 400px;
+  height: 400px;
+}
+.thumbnail{
+  width: 126px;
+  height: 126px;
+}
+
+}
+@media only screen and (max-width: 1112px){
+.mainImage{
+  width: 600px;
+  height: 600px;
+}
+.thumbnail{
+  width: 193px;
+  height: 193px;
+}
+
+}
+@media only screen and (max-width: 845px){
+.mainImage{
+  width: 500px;
+  height: 500px;
+}
+.thumbnail{
+  width: 157px;
+  height: 157px;
+}
+
+}
+@media only screen and (max-width: 715px){
+.mainImage{
+  width: 400px;
+  height: 400px;
+}
+.thumbnail{
+  display: none;
+}
+
+}
+@media only screen and (max-width: 590px){
+.mainImage{
+  width: 350px;
+  height: 350px;
+}
+
+
+}
+@media only screen and (max-width: 530px){
+.mainImage{
+  width: 300px;
+  height: 300px;
+}
+
+
+}
+@media only screen and (max-width: 470px){
+.mainImage{
+  width: 250px;
+  height: 300px;
+}
+
+
+}
+@media only screen and (max-width: 407px){
+.mainImage{
+  width: 200px;
+  height: 250px;
+}
+
+
+}

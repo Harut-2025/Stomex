@@ -7,11 +7,15 @@
   "thatsall": "Ընդամենը:",
   "shipping": "Առաքում:",
   "discount": "Զեղչ: ",
+  "shere":"Կիսվել",
+  "otherproduct":"Այլ ապրանքներ",
+
   "manufacturer": "Արտադրող՝ ",
   "seller": "Վաճառող՝ ",
   "availability": "Առկայություն՝",
   "available": "Առկա է",
   "count": "Քանակ",
+
   "pages": [
     {
       "name": "Խանութներ"
@@ -104,12 +108,12 @@
       "label": "Գործունեություն։ Ստոմատոլոգիական, ատամնատեխնիկական նյութերի և սարքավորումների վաճառք\nՀասցե՝ Հ. Պարոնյան 9, Երևան, Հայաստան\nՀեռ.՝ (+374) 12 55 53 00\nԱշխ. ժամեր՝ Երկուշաբթի - ՈՒրբաթ` 9:00 -17:00"
     }
   ],
-"cards": [ 
+  "cards": [
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "Ni-Ti Heat Activated Classic",
       "price": "1660",
-      "info": "խոտորային մետաղալար",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "./Assets/Img/Card1.png",
       "img2": "./Assets/Img/img1.png",
       "img3": "./Assets/Img/img1.1.jpg",
@@ -117,10 +121,10 @@
       "id": "1"
     },
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "Beta Titanium Medium Force",
       "price": "1770",
-      "info": "միջին ամրություն",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "./Assets/Img/Card2.png",
       "img2": "./Assets/Img/img2.png",
       "img3": "./Assets/Img/img2.1.jpg",
@@ -128,7 +132,7 @@
       "id": "2"
     },
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "Stainless Steel Precision Round",
       "price": "1540",
       "info": "բարձր դիմադրություն",
@@ -142,7 +146,7 @@
       "type": "Arc",
       "name": "TMA Superelastic Light",
       "price": "1600",
-      "info": "սլաքային ուժ",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "./Assets/Img/Card4.png",
       "img2": "./Assets/Img/img4.png",
       "img3": "./Assets/Img/img4.1.jpg",
@@ -150,9 +154,9 @@
       "id": "4"
     }
   ],
-  "cardsTwo": [ 
+  "cardsTwo": [
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "Ni-Ti Heat Activated Classic",
       "price": "1660",
       "info": "խոտորային մետաղալար",
@@ -163,10 +167,10 @@
       "id": "1"
     },
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "Beta Titanium Medium Force",
       "price": "1770",
-      "info": "միջին ամրություն",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "./Assets/Img/Card2.png",
       "img2": "./Assets/Img/img2.png",
       "img3": "./Assets/Img/img2.1.jpg",
@@ -174,10 +178,10 @@
       "id": "2"
     },
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "Stainless Steel Precision Round",
       "price": "1540",
-      "info": "բարձր դիմադրություն",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "./Assets/Img/Card3.png",
       "img2": "./Assets/Img/img3.png",
       "img3": "./Assets/Img/img3.1.jpg",
@@ -185,7 +189,7 @@
       "id": "3"
     },
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "TMA Superelastic Light",
       "price": "1600",
       "info": "սլաքային ուժ",
@@ -196,10 +200,10 @@
       "id": "4"
     },
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "Ni-Ti Ultra Flex",
       "price": "1580",
-      "info": "բարձրագույն ճկունություն",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "./Assets/Img/Card2.png",
       "img2": "./Assets/Img/img2.png",
       "img3": "./Assets/Img/img2.1.jpg",
@@ -207,10 +211,10 @@
       "id": "2"
     },
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "Stainless Steel Torque Pro",
       "price": "1560",
-      "info": "ուժեղ կառավարում",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "./Assets/Img/Card1.png",
       "img2": "./Assets/Img/img1.png",
       "img3": "./Assets/Img/img1.1.jpg",
@@ -218,10 +222,10 @@
       "id": "1"
     },
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "Beta Titanium Low Friction",
       "price": "1810",
-      "info": "հարթ ներգրավում",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "./Assets/Img/Card3.png",
       "img2": "./Assets/Img/img3.png",
       "img3": "./Assets/Img/img3.1.jpg",
@@ -229,10 +233,10 @@
       "id": "3"
     },
     {
-      "type": "Arc",
+      "type": "Աղեղ ",
       "name": "TMA Classic Performance",
       "price": "1760",
-      "info": "կշռադատված ուժ և ճկունություն",
+      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "./Assets/Img/Card4.png",
       "img2": "./Assets/Img/img4.png",
       "img3": "./Assets/Img/img4.1.jpg",

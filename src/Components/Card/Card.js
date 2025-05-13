@@ -13,6 +13,8 @@ export default function Card({ addCardToBasket, addCardToFavorit, favorit, img, 
     
     const card = { id, img, type, cardName, info, price };
     const displayPrice = convertPrice(price, i18n.language);
+    
+    
 
     const isCardFavorited = (id) => favorit.some(item => item.id === id);
 

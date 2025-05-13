@@ -7,7 +7,7 @@ import Card from '../../Components/Card/Card.js';
 import MenuSlider from '../../Components/MenuSlider/MenuSlider.jsx';
 import translationData from '../../locales/hy/translation.json';
 import Order from '../../Components/Order/Order.jsx'
-import { Link } from 'react-router-dom';
+
 
 
 export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {

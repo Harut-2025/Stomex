@@ -36,7 +36,7 @@ function ProductPage({ addCardToBasket, addCardToFavorit, favorit }) {
                             <div className={styles.starshere}>
                                 <Stars />
                                 <div className={styles.shereDiv}>
-                                    <img src="./Assets/Img/share 1.png" alt="Shere" />
+                                    <img src="/Assets/Img/share 1.png" alt="Shere" />
                                     <p className={styles.shere}>{t('shere')}</p>
                                 </div>
                             </div>
@@ -63,23 +63,25 @@ function ProductPage({ addCardToBasket, addCardToFavorit, favorit }) {
 
                 <div className={styles.containerTwo}>
                     <p className={styles.otherProduct}>{t('otherproduct')}</p>
-                    <div className={styles.cardsDiv}>
-
-                        {cardsList.map((cart) => (
-                            <Card addCardToBasket={addCardToBasket}
-                                addCardToFavorit={addCardToFavorit}
-                                favorit={favorit}
-                                img={cart.img}
-                                type={cart.type}
-                                cardName={cart.name}
-                                info={cart.info}
-                                price={cart.price}
-                                id={cart.id}
-                                cartid={cart.id}
-                            />
-                        ))}
-                    </div>
                 </div>
+                <div className={styles.cardsDiv}>
+
+                    {cardsList.map((cart) => (
+                        <Card addCardToBasket={addCardToBasket}
+                            addCardToFavorit={addCardToFavorit}
+                            favorit={favorit}
+                            img={cart.img}
+                            type={cart.type}
+                            cardName={cart.name}
+                            info={cart.info}
+                            price={cart.price}
+                            id={cart.id}
+                            cartid={cart.id}
+                        />
+                    ))}
+                </div>
+
+
             </section>
             <section>
                 <Order />

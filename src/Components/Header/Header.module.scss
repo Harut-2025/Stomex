@@ -218,6 +218,9 @@ nav {
     .pagesList a {
         font-size: 12px;
     }
+    .icons{
+        gap: 25px;
+    }
 }
 
 @media only screen and (max-width: 1303px) {
@@ -234,6 +237,11 @@ nav {
         justify-content: end;
     }
 
+}
+@media only screen and (max-width: 1150px){
+    .icons{
+        gap: 20px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -274,13 +282,7 @@ nav {
 
 
 }
-@media only screen and (max-width: 620px){
-    .basketShop{
-        display: none;
-    }
-    
 
-}
 
 @media only screen and (max-width: 600px) {
     .page {
@@ -301,20 +303,16 @@ nav {
 
     .mediaLogo {
         margin-left: 30px;
-    }
-
-    .icons {
-        gap: 0;
         display: none;
     }
+
+    
 
     header {
         padding-bottom: 20px;
     }
 
-    .nonLogo {
-        display: none;
-    }
+    
     .shopCard {
         right: 0px;
         top: 50px;

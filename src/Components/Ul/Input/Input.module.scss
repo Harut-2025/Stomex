@@ -1,71 +1,112 @@
-.input{
-    width: 666px;
-    height: 48px;
-    border: 1px solid #66666652;
-    border-radius: 5px;
-    padding-left: 30px;
-    outline: none;
-    
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.inputButton{
-    position: absolute;
-    top: 10px;
-    transform: translateX(-60px);
-    cursor: pointer;
-    
-}
-.inputDiv{
-    position: relative;
-    width: fit-content;
-    
-}
-
-
-@media only screen and (max-width: 1500px){
-    .input{
-        width: 600px;
-    }
+.input {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border: 1px solid #ccc;
+  width: 600px;
+  opacity: 0;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 50px;
 }
 
-@media only screen and (max-width: 1370px){
+.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.inputButton {
+  background-color: transparent;
+  position: absolute;
+  left: 93%;
+}
+@media only screen and (max-width: 1420px){
     .input{
         width: 500px;
     }
-}
-
-@media only screen and (max-width: 1230px){
-    .input{
-        width: 400px;
+    .inputButton{
+        left: 91%;
     }
 }
-
-@media only screen and (max-width: 1120px){
+@media only screen and (max-width: 1275px){
+    .input{
+        width: 410px;
+    }
+    .inputButton{
+        left: 90%;
+    }
+}
+@media only screen and (max-width: 1150px){
     .input{
         width: 300px;
     }
+    .inputButton{
+        left: 87%;
+    }
 }
 @media only screen and (max-width: 1000px){
-    .inputDiv{
-        display: none;
-    }
- }
- @media only screen and (max-width: 600px){
-    .inputDiv{
-        display: block;
-        width: 50px;
-        height: 50px;
-        
-    }
-    .input{
-        width: 50px;
-        display: none;
-    }
-    .inputButton{
-        left: 70px;
-    }
- }
-  
-  
+   .container{
+    display: none;
+   }
+}
+@media only screen and (max-width: 600px){
+   .container{
+    display: block;
+   }
+   .inputButton{
+    top: 9px;
+   }
+   
+}
+@media only screen and (max-width: 540px){
+   
+   .input{
+   width: 250px;
+   }
+   .inputButton{
+    right: 12px;
+   }
    
    
+}
+@media only screen and (max-width: 480px){
+   .input{
+   width: 220px;
+   }
+   
+}
+@media only screen and (max-width: 440px){
+   .input{
+   width: 200px;
+   }
+   
+}
+@media only screen and (max-width: 410px){
+   .input{
+   width: 160px;
+   }
+   
+}
+@media only screen and (max-width: 360px){
+   .input{
+   width: 100px;
+   }
+   .inputButton{
+    left: 80%;
+   }
+   
+}
+
+
+
+
+
+
+

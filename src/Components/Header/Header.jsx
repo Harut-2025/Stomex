@@ -132,7 +132,8 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
                 )}
               </div>
             )}
-            <User img={'./Assets/Img/Group 20.png'} />
+            <div className={styles.user}> <User img={'./Assets/Img/Group 20.png'} /></div>
+           
           </div>
         </nav>
         <Link to="/">

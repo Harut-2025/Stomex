@@ -24,11 +24,9 @@
     font-weight: 700;
     margin: 0;
 }
-span{
-    color: rgba(46, 91, 207, 1);
-}
+
 .smallInfo{
-        color: rgba(102, 102, 102, 1);
+    color: rgba(102, 102, 102, 1);
 }
 .count{
     color: rgba(102, 102, 102, 1);
@@ -52,39 +50,45 @@ span{
     border-radius: 5px;
     font-size: 20px;
     font-weight: 600;
-    margin-top: 90px;
+    margin-top: 56px;
 }
 .otherProduct{
     font-size: 30px;
     font-weight: 600;
     color: rgba(102, 102, 102, 1);
     text-transform: uppercase;
+    
 }
 .cardsDiv{
     display: flex;
     gap: 23px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 95%;
+    margin: auto;
+    
 }
 .containerTwo{
-    width: 51%;
+    width: 80%;
     margin: auto;
 }
 .shereDiv{
     display: flex;
     align-items: center;
+    
 }
 .shere{
     color: rgba(102, 102, 102, 1);
     font-size: 22px;
     font-weight: 400;
+    
 }
 .starshere{
     display: flex;
     align-items: center;
     gap: 114px;
 }
-@media only screen and (max-width: 1505px){
+@media only screen and (max-width: 1545px){
 .flex{
     gap: 50px;
 
@@ -99,7 +103,12 @@ span{
     margin-top: 75px;
 }
 }
-@media only screen and (max-width: 1265px){
+@media only screen and (max-width: 1505px){
+    .name{
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 1302px){
 .flex{
     gap: 15px;
 
@@ -111,7 +120,7 @@ span{
     font-size: 45px;
 }
 .add{
-    margin-top: 32px;
+    margin-top: 80px;
 }
 .count{
     font-size: 30px;
@@ -154,4 +163,9 @@ span{
     font-size: 40px;
 }
 
+}
+@media only screen and (max-width: 1900px){
+    .containerTwo{
+        width: 90%;
+    }
 }

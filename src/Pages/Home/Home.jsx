@@ -25,7 +25,7 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
       <section className={styles.sectionOne}>
         <div className={styles.containerTree}>
           <div className={styles.information}>
-            <a href="https://www.zoho.com/" target="blank">
+            <a href="https://www.zoho.com/" target="blank" className={styles.content}>
               <img src="./Assets/Img/LeftADD.png" alt="" />
             </a>
             <div>
@@ -47,7 +47,7 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
               </div>
               <p className={styles.shops}>{t('shops')}</p>
             </div>
-            <a href="https://www.zendesk.com/" target="blank">
+            <a href="https://www.zendesk.com/" target="blank"  className={styles.content}>
               <img src="./Assets/Img/RightADD.png" alt="" />
             </a>
 

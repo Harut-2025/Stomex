@@ -46,7 +46,7 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
           <div className={styles.lengDiv}><Leng /></div>
           <div className={styles.mediaLogo}>
             <Link to="/">
-              <img src="./Assets/Img/watermark2 1.png" alt="Logo" className={styles.nonLogo} />
+              <img src="/Assets/Img/watermark2 1.png" alt="Logo" className={styles.nonLogo} />
             </Link>
           </div>
 
@@ -74,7 +74,7 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
                       <div>
                         <p className={styles.basketPrice}>{cart.price} {t('money')}</p>
                       </div>
-                      <img src="./Assets/Img/Vector (1).png" alt="" className={styles.delete} onClick={() => {
+                      <img src="/Assets/Img/Vector (1).png" alt="" className={styles.delete} onClick={() => {
                         setBuyCard(prev => {
                           const updated = prev.filter((_, i) => i !== index);
                           localStorage.setItem('buyCard', JSON.stringify(updated));
@@ -114,7 +114,7 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
                         <p className={styles.basketTitle}>{cart.type} {cart.cardName}</p>
                       </div>
                       <img
-                        src="./Assets/Img/Vector (1).png"
+                        src="/Assets/Img/Vector (1).png"
                         alt=""
                         className={styles.delete}
                         onClick={() => {

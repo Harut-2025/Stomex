@@ -3,12 +3,34 @@
     margin: auto; 
     
 }
+.sectionTwo{
+    background-color: rgba(114, 114, 114, 0.096);
+    padding-top: 42px;
+    padding-bottom: 112px;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    
+}
+.containerSize{
+    width: 90%;
+    margin: auto;
+    max-width: 1500px;
 
+}
+.colorBlue{
+    color: #2E5BCF;
+}
+.gray{
+    font-size: 20px;
+    color: rgba(102, 102, 102, 1);
+}
 .flex{
     display: flex;
     gap: 150px;
     margin-top: 88px;
     justify-content: center;
+    
 
     
 }
@@ -23,6 +45,10 @@
     color: rgba(102, 102, 102, 1);
     font-weight: 700;
     margin: 0;
+}
+.productInfo{
+    min-width: 553px;
+    
 }
 
 .smallInfo{
@@ -51,6 +77,14 @@
     font-size: 20px;
     font-weight: 600;
     margin-top: 56px;
+    border: none;
+    background-color: #2E5BCF;
+    cursor: pointer;
+}
+.new{
+    p{
+        display: none;
+    }
 }
 .otherProduct{
     font-size: 30px;
@@ -88,7 +122,10 @@
     align-items: center;
     gap: 114px;
 }
-@media only screen and (max-width: 1545px){
+@media only screen and (max-width: 1630px){
+    .productInfo{
+        min-width: 0;
+    }
 .flex{
     gap: 50px;
 
@@ -125,6 +162,17 @@
 .count{
     font-size: 30px;
 }
+}
+@media only screen and (max-width: 1265px){
+    .smallDiv{
+        margin-bottom: 60px;
+    }
+    .add{
+        margin-top: 45px;
+    }
+    .name{
+        font-size: 25px;
+    }
 }
 @media only screen and (max-width: 1112px){
 .flex{

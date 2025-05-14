@@ -8,7 +8,7 @@ import FavoritButton from '../Ul/FavoritButton/FavoritButton.js';
 import BasketButton from '../Ul/BasketButton/BasketButton.jsx';
 import { convertPrice } from '../../Components/Currency/Currency.js';
 
-export default function Card({ addCardToBasket, addCardToFavorit, favorit, img, type, cardName, info, price, id, cartid }) {
+export default function Card({ addCardToBasket, addCardToFavorit, favorit, img, type, cardName, info, price, id, cartid, newStyle }) {
     const { t, i18n } = useTranslation();
     
     const card = { id, img, type, cardName, info, price };
@@ -22,7 +22,7 @@ export default function Card({ addCardToBasket, addCardToFavorit, favorit, img, 
         <div className={styles.cardsList}>
             <div className={styles.card} style={{ backgroundImage: `url(${img})`, }}>
                 <div className={styles.reiting}>
-                    <div className={styles.new}><p>New</p></div>
+                    <div className={newStyle}><p>New</p></div>
                     <div className={styles.starsDiv}> <Stars /></div>
                 </div>
                 <div className={styles.forPositing}>

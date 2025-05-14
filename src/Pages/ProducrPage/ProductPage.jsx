@@ -13,9 +13,8 @@ function ProductPage({ addCardToBasket, addCardToFavorit, favorit }) {
     const { t, i18n } = useTranslation();
     const { id } = useParams();
     const cardsList = i18n.t('cards', { returnObjects: true });
-    const cardsTwo = i18n.t('cardsTwo', { returnObjects: true });
-    const allCards = [...cardsList, ...cardsTwo];
-    const product = allCards.find((item) => String(item.id) === id);
+    const product = cardsList.find((item) => String(item.id) === id);
+    const firstFoureCards = cardsList.slice(0, 4);
 
 
 
@@ -32,7 +31,7 @@ function ProductPage({ addCardToBasket, addCardToFavorit, favorit }) {
                     <p className={styles.market}>Alfa Stom → {product.name}</p>
                     <div className={styles.flex}>
                         <Slider img2={product.img2} img3={product.img3} img4={product.img4} />
-                        <div>
+                        <div className={styles.productInfo}>
                             <div className={styles.starshere}>
                                 <Stars />
                                 <div className={styles.shereDiv}>
@@ -50,13 +49,29 @@ function ProductPage({ addCardToBasket, addCardToFavorit, favorit }) {
 
                             <p className={styles.count}>{t('count')}</p>
                             <div className={styles.countDiv}><CountInput /></div>
-                            <BasketButton className={styles.add} />
+                            <BasketButton className={styles.add} addCardToBasket={addCardToBasket} />
 
 
                         </div>
                     </div>
                 </div>
             </section>
+            <section className={styles.sectionTwo}>
+                <div className={styles.containerSize}>
+                    <p className={styles.gray}>Описание:
+                        Изготовлен из титан-молибденового сплава. Подходит для финишной обработки <br />
+                        <span className={styles.colorBlue}>Производитель: Morelli (Бразилия)</span></p><br />
+                    <p className={styles.gray}>Показано в представлении ортодонтического лечения</p>
+                    <p className={styles.gray}>0,18 - 0,45mm</p>
+                    <p className={styles.gray}> 0,32 - 0,80mm</p>
+                    <p className={styles.gray}>0,16 x .0,16 - 0,40 x 0,40mm</p>
+                    <p className={styles.gray}>0,16 x .0,22 - 0,40 x 0,55mm</p>
+                    <p className={styles.gray}> 0,17 x .0,25 - 0,43 x 0,63mm</p>
+                    <p className={styles.gray}> 0,18 x .0,25 - 0,45 x 0,63mm</p>
+                    <p className={styles.gray}> 0,19 x 0,25 - 0,48 x 0,63mm </p>
+                </div>
+            </section>
+
 
             <section>
 
@@ -66,7 +81,7 @@ function ProductPage({ addCardToBasket, addCardToFavorit, favorit }) {
                 </div>
                 <div className={styles.cardsDiv}>
 
-                    {cardsList.map((cart) => (
+                    {firstFoureCards.map((cart) => (
                         <Card addCardToBasket={addCardToBasket}
                             addCardToFavorit={addCardToFavorit}
                             favorit={favorit}
@@ -77,6 +92,7 @@ function ProductPage({ addCardToBasket, addCardToFavorit, favorit }) {
                             price={cart.price}
                             id={cart.id}
                             cartid={cart.id}
+                            newStyle={styles.new}
                         />
                     ))}
                 </div>

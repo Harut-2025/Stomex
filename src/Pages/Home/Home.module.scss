@@ -38,6 +38,27 @@
 
 }
 
+.new{
+    width: 65px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E5BCF;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #2E5BCF;
+    
+    p{
+        color: white;
+        font-size: 20px;
+    }
+}
+.notNew{
+    p{
+        display: none;
+    }
+}
+
 
 .cardsDiv{
     display: flex;

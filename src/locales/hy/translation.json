@@ -111,7 +111,7 @@
   "cards": [
     {
       "type": "Աղեղ ",
-      "name": "Ni-Ti Heat Activated Classic",
+      "name": "Ni-Ti ջերմա- յին   մետաղալար",
       "price": "1660",
       "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "/Assets/Img/Card1.png",
@@ -122,7 +122,7 @@
     },
     {
       "type": "Աղեղ ",
-      "name": "Beta Titanium Medium Force",
+      "name": "Բետա տիտանի միջին ուժ",
       "price": "1770",
       "info": "քառակուսի,ուղղանկյուն հատույթով AO",
       "img": "/Assets/Img/Card2.png",
@@ -133,7 +133,7 @@
     },
     {
       "type": "Աղեղ ",
-      "name": "Stainless Steel Precision Round",
+      "name": "Չժանգոտվող  ճշգրիտ կլոր",
       "price": "1540",
       "info": "բարձր դիմադրություն",
       "img": "/Assets/Img/Card3.png",
@@ -143,7 +143,7 @@
       "id": "3"
     },
     {
-      "type": "Arc",
+      "type": "Աղեղ",
       "name": "TMA Superelastic Light",
       "price": "1600",
       "info": "քառակուսի,ուղղանկյուն հատույթով AO",
@@ -152,98 +152,20 @@
       "img3": "./Assets/Img/img4.1.jpg",
       "img4": "./Assets/Img/img4.2.jpg",
       "id": "4"
+    },
+    {
+      "type": "Աղեղ",
+      "name": "Օրթոդոնտիկ ուղղանկյուն ",
+      "price": "520",
+      "info": "Stainless Steel Ovoid",
+      "img": "/Assets/Img/Card5.png",
+      "img3": "./Assets/Img/img5.1.jpg",
+      "img4": "./Assets/Img/img5.2.webp",
+      "img2": "./Assets/Img/img5.jpg",
+      "id": "5"
     }
   ],
-  "cardsTwo": [
-    {
-      "type": "Աղեղ ",
-      "name": "Ni-Ti Heat Activated Classic",
-      "price": "1660",
-      "info": "խոտորային մետաղալար",
-      "img": "./Assets/Img/Card1.png",
-      "img2": "./Assets/Img/img1.png",
-      "img3": "./Assets/Img/img1.1.jpg",
-      "img4": "./Assets/Img/img1.2.webp",
-      "id": "1"
-    },
-    {
-      "type": "Աղեղ ",
-      "name": "Beta Titanium Medium Force",
-      "price": "1770",
-      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-      "img": "./Assets/Img/Card2.png",
-      "img2": "./Assets/Img/img2.png",
-      "img3": "./Assets/Img/img2.1.jpg",
-      "img4": "./Assets/Img/2.2.webp",
-      "id": "2"
-    },
-    {
-      "type": "Աղեղ ",
-      "name": "Stainless Steel Precision Round",
-      "price": "1540",
-      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-      "img": "./Assets/Img/Card3.png",
-      "img2": "./Assets/Img/img3.png",
-      "img3": "./Assets/Img/img3.1.jpg",
-      "img4": "./Assets/Img/img3.2.webp",
-      "id": "3"
-    },
-    {
-      "type": "Աղեղ ",
-      "name": "TMA Superelastic Light",
-      "price": "1600",
-      "info": "սլաքային ուժ",
-      "img": "./Assets/Img/Card4.png",
-      "img2": "./Assets/Img/img4.png",
-      "img3": "./Assets/Img/img4.1.jpg",
-      "img4": "./Assets/Img/img4.2.jpg",
-      "id": "4"
-    },
-    {
-      "type": "Աղեղ ",
-      "name": "Ni-Ti Ultra Flex",
-      "price": "1580",
-      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-      "img": "./Assets/Img/Card2.png",
-      "img2": "./Assets/Img/img2.png",
-      "img3": "./Assets/Img/img2.1.jpg",
-      "img4": "./Assets/Img/2.2.webp",
-      "id": "2"
-    },
-    {
-      "type": "Աղեղ ",
-      "name": "Stainless Steel Torque Pro",
-      "price": "1560",
-      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-      "img": "./Assets/Img/Card1.png",
-      "img2": "./Assets/Img/img1.png",
-      "img3": "./Assets/Img/img1.1.jpg",
-      "img4": "./Assets/Img/img1.2.webp",
-      "id": "1"
-    },
-    {
-      "type": "Աղեղ ",
-      "name": "Beta Titanium Low Friction",
-      "price": "1810",
-      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-      "img": "./Assets/Img/Card3.png",
-      "img2": "./Assets/Img/img3.png",
-      "img3": "./Assets/Img/img3.1.jpg",
-      "img4": "./Assets/Img/img3.2.webp",
-      "id": "3"
-    },
-    {
-      "type": "Աղեղ ",
-      "name": "TMA Classic Performance",
-      "price": "1760",
-      "info": "քառակուսի,ուղղանկյուն հատույթով AO",
-      "img": "./Assets/Img/Card4.png",
-      "img2": "./Assets/Img/img4.png",
-      "img3": "./Assets/Img/img4.1.jpg",
-      "img4": "./Assets/Img/img4.2.jpg",
-      "id": "4"
-    }
-  ],
+
   "shoping": [
     {
       "img": "./Assets/Img/bohem.png"

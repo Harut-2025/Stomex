@@ -15,7 +15,6 @@ function App() {
   const [buyCard, setBuyCard] = useState([]);
   const [favorit, setFavorit] = useState([]);
   
-  
 
   useEffect(() => {
     const savedBuyCard = JSON.parse(localStorage.getItem('buyCard')) || [];
@@ -25,6 +24,7 @@ function App() {
   }, []);
 
   const addCardToBasket = (card) => {
+    
     setBuyCard(prev => {
       const alreadyInCart = prev.some(item => item.id === card.id );
       if (alreadyInCart) return prev;

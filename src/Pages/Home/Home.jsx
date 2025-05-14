@@ -14,8 +14,15 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
   const { t, i18n } = useTranslation();
   const shoping = i18n.t('shoping', { returnObjects: true });
   const cardsList = i18n.t('cards', { returnObjects: true });
-  const cardsTwo = i18n.t('cardsTwo', { returnObjects: true });
 
+  const firstFoureCards = cardsList.slice(0, 4);
+
+  const repeatedCards = [];
+
+  while (repeatedCards.length < 8) {
+    repeatedCards.push(...cardsList);
+  }
+  const firstFiveCards = repeatedCards.slice(0, 8);
 
 
 
@@ -31,8 +38,9 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
             <div>
               <p className={styles.news}>{t('news')}</p>
               <div className={styles.cardsDiv}>
-                {cardsList.map((cart) => (
+                {firstFoureCards.map((cart) => (
                   <Card addCardToBasket={addCardToBasket}
+                    key={cart.id}
                     addCardToFavorit={addCardToFavorit}
                     favorit={favorit}
                     img={cart.img}
@@ -40,14 +48,15 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
                     cardName={cart.name}
                     info={cart.info}
                     price={cart.price}
-                    id={cart.id} 
-                    cartid={cart.id} 
+                    id={cart.id}
+                    cartid={cart.id}
+                    newStyle={styles.new}
                   />
                 ))}
               </div>
               <p className={styles.shops}>{t('shops')}</p>
             </div>
-            <a href="https://www.zendesk.com/" target="blank"  className={styles.content}>
+            <a href="https://www.zendesk.com/" target="blank" className={styles.content}>
               <img src="./Assets/Img/RightADD.png" alt="" />
             </a>
 
@@ -74,19 +83,21 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
         <div className={styles.shopsCont}>
           <p className={styles.news}>{t('suggest')}</p>
           <div className={styles.cardsDiv}>
-            {cardsTwo.map((cart) => (
-                  <Card addCardToBasket={addCardToBasket}
-                    addCardToFavorit={addCardToFavorit}
-                    favorit={favorit}
-                    img={cart.img}
-                    type={cart.type}
-                    cardName={cart.name}
-                    info={cart.info}
-                    price={cart.price}
-                    id={cart.id}
-                    cartid={cart.id} 
-                    />
-                ))}
+            {firstFiveCards.map((cart) => (
+              <Card addCardToBasket={addCardToBasket}
+                key={Math.random()}
+                addCardToFavorit={addCardToFavorit}
+                favorit={favorit}
+                img={cart.img}
+                type={cart.type}
+                cardName={cart.name}
+                info={cart.info}
+                price={cart.price}
+                id={cart.id}
+                cartid={cart.id}
+                newStyle={styles.notNew}
+              />
+            ))}
           </div>
         </div>
       </section>

@@ -31,7 +31,6 @@
     border-bottom-right-radius: 10px;
     border: 1px solid #2E5BCF;
     
-    
     p{
         color: white;
         font-size: 20px;
@@ -42,6 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 32px;
 }
 .img{
     height: 309px;
@@ -93,5 +93,5 @@ h3{
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
-    border-right: 1px solid #C4C4C480;
+    border-right: 1px solid #C4C4C480;  
 }

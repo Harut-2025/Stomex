@@ -26,6 +26,7 @@
   background-color: transparent;
   position: absolute;
   left: 93%;
+  border: none;
 }
 @media only screen and (max-width: 1420px){
     .input{
@@ -80,6 +81,10 @@
    .input{
    width: 220px;
    }
+   .inputButton{
+    left: 83%;
+   }
+   
    
 }
 @media only screen and (max-width: 440px){
@@ -92,6 +97,9 @@
    .input{
    width: 160px;
    }
+    .inputButton{
+    left: 78%;
+   }
    
 }
 @media only screen and (max-width: 360px){
@@ -99,8 +107,9 @@
    width: 100px;
    }
    .inputButton{
-    left: 80%;
+    left: 74%;
    }
+   
    
 }
 

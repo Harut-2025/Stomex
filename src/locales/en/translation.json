@@ -1,4 +1,6 @@
 {
+"stomexInfo":"Stomex is a platform that allows doctors to get information and order the necessary product from a range of 21 stores with just one call.The website includes companies supplying dental supplies in Armenia and their range.By ordering with Stomex Delivery, you save your time and avoid the hassle of shopping in different stores.Delivery within Yerevan costs 1 $, regardless of the volume and size of the product Stomex.am Delivery provides a cumulative Bonus Card, thanks to which 2% of purchases made in AMD are accumulated on the Bonus Card for further purchases.The card is provided in a one-time manner, in case of purchases of 65 $ and becomes available in case of exceeding the accumulated 12 $.Stomex.am has also expanded its activities, starting new partnerships with public and service facilities, ensuring the hygienic protection of their visitors and employees.",
+      
     "leng": "ENG",
     "value": "USD",
     "money":"$",
@@ -216,6 +218,6 @@
     "passwordResetSent": "Password reset email sent! Check your inbox.",
     "profile": "Profile"
   }
-
+  
 
 }

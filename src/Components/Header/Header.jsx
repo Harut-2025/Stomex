@@ -18,14 +18,11 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
     convertPrice(totalPrice, i18n.language, exchangeRate)
   );
     const pagesList = i18n.t('pages', { returnObjects: true })
-
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setConvertedTotal(convertPrice(totalPrice, lng, exchangeRate));
   };
-
   useEffect(() => {
-
     setConvertedTotal(convertPrice(totalPrice, i18n.language, exchangeRate));
   }, [totalPrice, i18n.language, exchangeRate]);
 
@@ -37,7 +34,6 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
 
   
   return (
-
     <header >
       <div className={styles.headerImg}></div>
       <div className={styles.containerOne}>
@@ -61,7 +57,6 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
         </p>
             <div className={styles.basketShop}> <Basket count={size} onClick={() => setBasketOpen(!basketOpen)} img={"./Assets/Img/Group 18.png"} /></div>
             {basketOpen && (
-
               <div className={styles.shopCard}>
                 <div className={styles.list}>
                   {buyCard.map((cart, index) => (
@@ -100,7 +95,6 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
                 </div>
               </div>
             )}
-
             <div className={styles.basketFav}>
               <Basket count={favsize} onClick={() => setFavoritOpen(!favoritOpen)} img={"./Assets/Img/Group 19.png"} />
             </div>
@@ -133,7 +127,6 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
               </div>
             )}
             <div className={styles.user}> <User img={'./Assets/Img/Group 20.png'} /></div>
-           
           </div>
         </nav>
         <Link to="/">
@@ -146,16 +139,12 @@ export default function Header({ buyCard, setBuyCard, favorit, setFavorit, total
             {pagesList.map((pages, index) => (
               <li key={index}>
                 <Link to={pages.path}>{pages.name}</Link>
-
               </li>
             ))}
             <div className={styles.menuDiv}><Menu /></div>
           </ul>
-
         </div>
-
       </div>
-
     </header>
 
 

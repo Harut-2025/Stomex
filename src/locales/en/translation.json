@@ -55,13 +55,6 @@
     "addres":"Address",
     "postalcode":"Postal code",
 
-    
-
-    "dentist":"Dentist",
-    "dental":"Dental technician",
-    "orthodontist":"Orthodontist",
-    "doctor":"Doctor",
-
 
     "orderAll":"WE DELIVER INDEPENDENTLY",
     "orderMassa":"FROM THE VOLUME OF THE PRODUCT",
@@ -155,6 +148,30 @@
     "firm": "Dentax",
     "label": "Activity: Sale of dental and dental laboratory materials and equipment\nAddress: 9 H. Paronyan, Yerevan, Armenia\nPhone: (+374) 12 55 53 00\nWorking hours: Monday - Friday: 9:00 - 17:00"
   }
+],
+
+"jobList":[
+{
+  "img":"./Assets/Img/Group 267.png",
+  "name":"Dentist",
+  "id":"1"
+},
+{
+  "img":"./Assets/Img/Group 268.png",
+  "name":"Dental technician",
+  "id":"2"
+},
+{
+  "img":"./Assets/Img/Group 269.png",
+  "name":"Orthodontist",
+  "id":"3"
+},
+{
+  "img":"./Assets/Img/Group 270.png",
+  "name":"Doctor",
+  "id":"4"
+}
+
 ],
 
 "footerpages":[

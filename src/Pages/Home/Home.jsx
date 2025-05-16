@@ -14,15 +14,15 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
   const { t, i18n } = useTranslation();
   const shoping = i18n.t('shoping', { returnObjects: true });
   const cardsList = i18n.t('cards', { returnObjects: true });
+  const jobList = i18n.t('jobList', { returnObjects: true });
 
   const firstFoureCards = cardsList.slice(0, 4);
 
-  const repeatedCards = [];
-
-  while (repeatedCards.length < 8) {
-    repeatedCards.push(...cardsList);
+  const CardSize = [];
+  while (CardSize.length < 8) {
+    CardSize.push(...cardsList);
   }
-  const firstFiveCards = repeatedCards.slice(0, 8);
+  const firstFiveCards = CardSize.slice(0, 8);
 
 
 
@@ -108,22 +108,13 @@ export default function Home({ addCardToBasket, addCardToFavorit, favorit }) {
           <div >
             <p className={styles.hayt}>{t('jobs')}</p>
             <div className={styles.jobsCard}>
-              <div className={styles.jobsInfo}>
-                <img src="./Assets/Img/Group 267.png" alt="photo" />
-                <p className={styles.jobName}>{t('dentist')}</p>
+             {jobList.map((job)=>(
+              <div className={styles.jobsInfo} key={job.id}>
+                <img src={job.img} alt="photo" />
+                <p className={styles.jobName}>{job.name}</p>
+
               </div>
-              <div className={styles.jobsInfo}>
-                <img src="./Assets/Img/Group 268.png" alt="photo" />
-                <p className={styles.jobName}>{t('dental')}</p>
-              </div>
-              <div className={styles.jobsInfo}>
-                <img src="./Assets/Img/Group 269.png" alt="photo" />
-                <p className={styles.jobName}>{t('orthodontist')}</p>
-              </div>
-              <div className={styles.jobsInfo}>
-                <img src="./Assets/Img/Group 270.png" alt="photo" />
-                <p className={styles.jobName}>{t('doctor')}</p>
-              </div>
+             ))}
             </div>
           </div>
         </div>

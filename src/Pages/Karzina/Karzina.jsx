@@ -5,13 +5,15 @@ import '../../i18n'
 import { useTranslation } from 'react-i18next';
 import Carusel from '../../Components/Carousel/Carousel'
 import Order from '../../Components/Order/Order'
+import { useAppContext } from '../../Components/Context/AppContext';
 
-export default function Karzina({ buyCard, setBuyCard, totalPrice }) {
+
+export default function Karzina() {
+   const { buyCard, setBuyCard, totalPrice } = useAppContext();
   const { t, i18n } = useTranslation();
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
-  console.log(buyCard);
   
   return (
     <>

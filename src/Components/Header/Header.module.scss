@@ -204,17 +204,56 @@ nav {
     display: flex;
     justify-content: right;
    
+
 }
 
 
+.dropdownMenu {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  min-width: 600px;
+  z-index: 1000;
+  background-color: #2E5BCF;
+  margin-top: 29px;
+  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none !important;
+    list-style: none;
+    
+    li {
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        &:hover {
+          color: #1890ff;
+        }
+      }
+    }
+  }
+}
+:global(.ant-dropdown .dropdownMenu ul) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-@media only screen and (max-width: 1660px) {
+
+@media only screen and (max-width: 1676px) {
     .pagesList a {
         font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 1480px) {
+@media only screen and (max-width: 1500px) {
     .pagesList a {
         font-size: 12px;
     }
@@ -223,7 +262,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 1303px) {
+@media only screen and (max-width: 1325px) {
     .pagesList li {
         display: none;
     }
@@ -279,49 +318,7 @@ nav {
         width: 400px;
     }
 
-
-.dropdownMenu {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  min-width: 600px;
-  z-index: 1000;
-
-  ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); // shows 4 columns
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-    list-style-type: none !important;
-    list-style: none;
-
-    li {
-      a {
-        color: #333;
-        font-size: 14px;
-        text-decoration: none;
-
-        &:hover {
-          color: #1890ff;
-        }
-      }
-    }
-  }
 }
-:global(.ant-dropdown .dropdownMenu ul) {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-
-}
-
-
 @media only screen and (max-width: 600px) {
     .page {
         display: none;
@@ -344,13 +341,9 @@ nav {
         display: none;
     }
 
-    
-
     header {
         padding-bottom: 20px;
     }
-
-    
     .shopCard {
         right: 0px;
         top: 50px;
@@ -365,6 +358,4 @@ nav {
         top: 50px;
         width: 350px;
     }
-    
-
 }

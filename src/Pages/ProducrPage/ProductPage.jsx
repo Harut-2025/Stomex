@@ -24,7 +24,6 @@ function ProductPage({ addCardToBasket, addCardToFavorit, favorit }) {
 
     return (
         <>
-
             <Carusel />
             <section >
                 <div className={styles.container}>

@@ -73,10 +73,10 @@ export default function Header() {
       return updated;
     });
   };
-const items = shopList.map((shop, index) => ({
-  key: index.toString(),
-  label: <Link to={`/shops/${shop.link}`}>{shop.name}</Link>,
-}));
+  const items = shopList.map((shop, index) => ({
+    key: index.toString(),
+    label: <Link to={`/shops/${shop.link}`}>{shop.name}</Link>,
+  }));
 
   const displayTotalPrice = Number(totalPrice) || 0;
 
@@ -201,42 +201,44 @@ const items = shopList.map((shop, index) => ({
 
       <div className={styles.page}>
         <div className={styles.containerOne}>
-<ul className={styles.pagesList}>
-  {Array.isArray(pagesList) &&
-    pagesList.map((page, index) => (
-      <li key={index}>
-        {page.name === 'Shops' || page.name === 'Խանութներ' ? (
-<Dropdown
-  overlay={
-    <div className={`${styles.dropdownMenu} custom-dropdown`}>
-      <ul>
-        {shopList.map((shop, index) => (
-          <li key={index}>
-            <Link to={`/shops/${shop.link}`}>{shop.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  }
-  trigger={['hover']}
-  placement="bottomLeft"
->
+          <ul className={styles.pagesList}>
+            {Array.isArray(pagesList) &&
+              pagesList.map((page, index) => (
+                <li key={index}>
+                  {page.name === 'Shops' || page.name === 'Խանութներ' ? (
+                    <Dropdown
+                      overlay={
+                        <div className={`${styles.dropdownMenu} custom-dropdown`}>
+                          <ul>
+                            {shopList.map((shop, index) => (
+                              <li key={index}>
+                                <Link to={`/shops/${shop.link}`}>{shop.name}</Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      }
+                      trigger={['hover']}
+                      placement="bottomLeft"
+                    >
 
-          <a onClick={e => e.preventDefault()} href="#">
-            <Space>
-              {page.name}
-              <DownOutlined />
-            </Space>
-          </a>
-        </Dropdown>
+                      <a onClick={e => e.preventDefault()} href="#">
+                        <Space>
+                          {page.name}
+                          <DownOutlined />
+                        </Space>
+                      </a>
+                    </Dropdown>
 
-        ) : (
-          <Link to={page.path || '#'}>{page.name}</Link>
-        )}
-      </li>
-    ))}
-</ul>
-
+                  ) : (
+                    <Link to={page.path || '#'}>{page.name}</Link>
+                  )}
+                </li>
+              ))}
+            <div className={styles.menuDiv}>
+              <Menu />
+            </div>
+          </ul>
 
         </div>
       </div>

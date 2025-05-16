@@ -9,11 +9,11 @@ hy: { translation: translationHY }
 }; 
 export default i18n; 
 i18n 
-.use(LanguageDetector) // ընտրում է լեզուն ըստ դիտարկիչի կամ տեղային կարգավորումների 
+.use(LanguageDetector)
 .use(initReactI18next) 
 .init({ 
 resources, 
-fallbackLng: 'hy', // Եթե լեզուն չի գտնվում՝ օգտագործի անգլերեն 
+fallbackLng: 'hy',
 interpolation: { 
 escapeValue: false 
 } 

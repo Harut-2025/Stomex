@@ -1,0 +1,18 @@
+.custom-dropdown ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 10px !important;
+}
+
+.custom-dropdown li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.custom-dropdown li a:hover {
+  color: #1890ff;
+}

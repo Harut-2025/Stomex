@@ -17,7 +17,7 @@ function AppContent() {
   const pagesList = i18n.t('pages', { returnObjects: true });
   const { loading } = useAppContext();
 
-  // if (loading) return <Loader />;
+  if (loading) return <Loader />;
 
   return (
     <Router>

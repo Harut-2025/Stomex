@@ -5,7 +5,7 @@ import DropDown from "../../Components/Ul/DropDown/DropDown";
 import Card from '../../Components/Card/Card.js';
 import Order from '../../Components/Order/Order.jsx';
 
-export default function Alfa( {addCardToBasket, addCardToFavorit, favorit }) {
+export default function Alfa({ addCardToBasket, addCardToFavorit, favorit }) {
     const { t, i18n } = useTranslation();
     const cardsList = i18n.t('cards', { returnObjects: true });
 
@@ -19,9 +19,10 @@ export default function Alfa( {addCardToBasket, addCardToFavorit, favorit }) {
         <>
             <div className={styles.container}>
                 <div className={styles.headDiv}>
-                    <a href="https://www.zoho.com/" target="blank">
-                        <img src="/Assets/Img/LeftADD.png" alt="add" />
-                    </a>
+                    <div className={styles.add}>
+                        <a href="https://www.zoho.com/" target="blank">
+                            <img src="/Assets/Img/LeftADD.png" alt="add" />
+                        </a></div>
                     <div>
                         <p className={styles.marketName}>{t('shops')} → Alfa Stom</p>
                         <div className={styles.marketInfo}>
@@ -64,16 +65,16 @@ export default function Alfa( {addCardToBasket, addCardToFavorit, favorit }) {
                         </div>
 
                     </div>
-
-                    <a href="https://www.zendesk.com/" target="blank" >
-                        <img src="/Assets/Img/RightADD.png" alt="" />
-                    </a>
+                    <div className={styles.add}>
+                        <a href="https://www.zendesk.com/" target="blank" >
+                            <img src="/Assets/Img/RightADD.png" alt="" />
+                        </a></div>
                 </div>
 
             </div>
-            
-            <Order/>
-            
+
+            <Order />
+
 
 
 

@@ -8,10 +8,13 @@ import CountInput from '../../Components/Ul/CountInput/CountInput'
 import BasketButton from '../../Components/Ul/BasketButton/BasketButton'
 import Card from '../../Components/Card/Card';
 import Order from '../../Components/Order/Order'
+import { useAppContext } from '../../Components/Context/AppContext';
 
-function ProductPage({ addCardToBasket, addCardToFavorit, favorit }) {
+
+function ProductPage() {
     const { t, i18n } = useTranslation();
     const { id } = useParams();
+     const { addCardToBasket, addCardToFavorit, favorit } = useAppContext();
     const cardsList = i18n.t('cards', { returnObjects: true });
     const product = cardsList.find((item) => String(item.id) === id);
     const firstFoureCards = cardsList.slice(0, 4);
@@ -45,10 +48,9 @@ function ProductPage({ addCardToBasket, addCardToFavorit, favorit }) {
                                 <p className={styles.smallInfo}>{t('seller')} <span>Stom</span></p>
                                 <p className={styles.smallInfo}>{t('availability')} <span>{t("available")}</span> </p>
                             </div>
-
                             <p className={styles.count}>{t('count')}</p>
                             <div className={styles.countDiv}><CountInput /></div>
-                            <BasketButton className={styles.add} addCardToBasket={addCardToBasket} />
+                            <BasketButton className={styles.add} addCardToBasket={addCardToBasket}   card={product}/>
 
 
                         </div>

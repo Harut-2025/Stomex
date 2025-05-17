@@ -43,3 +43,34 @@
     display: flex;
     justify-content: end;
 }
+
+@media only screen and (max-width: 1240px){
+    .add{
+        display: none;
+    }
+   
+    
+}
+@media only screen and (max-width: 1025px){
+    .cardDiv{
+        justify-content: center;
+    }
+   
+    
+}
+
+@media only screen and (max-width: 800px){
+    .marketInfo{
+        display: none;
+    }
+    .marketName{
+        display: none;
+    }
+    .headDiv{
+        margin-top: 43px;
+    }
+    .filterDiv{
+        justify-content: start;
+    }
+    
+}

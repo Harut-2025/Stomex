@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import styles from './Header.module.scss';
-import globalStyles from '../../App.module.scss';
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
 import Input from '../Ul/Input/Input';
@@ -15,29 +14,30 @@ import { DownOutlined, SmileOutlined } from '@ant-design/icons';
 import { Dropdown, Space } from 'antd';
 
 
+
 const shopList = [
-  { name: "Alfa Stom.", link: "Alfa Stom." },
-  { name: "ArmDental.", link: "ArmDental." },
-  { name: "Artenyanner LLC.", link: "Artenyanner LLC." },
-  { name: "Aledent", link: "Aledent" },
-  { name: "Arkona", link: "Arkona" },
-  { name: "BioChem", link: "BioChem" },
-  { name: "Dental Butique", link: "Dental Butique" },
-  { name: "Dentax", link: "Dentax" },
-  { name: "Eldex", link: "Eldex" },
-  { name: "GALIARD", link: "GALIARD" },
-  { name: "GDC", link: "GDC" },
-  { name: "ГАВА Груп", link: "ГАВА Груп" },
-  { name: "GARNI Line", link: "GARNI Line" },
-  { name: "GlobMed", link: "GlobMed" },
-  { name: "Medtechservice", link: "Medtechservice" },
-  { name: "MED ENGINEERING SERVICE", link: "MED ENGINEERING SERVICE" },
-  { name: "M&D Dental Shop", link: "M&D Dental Shop" },
-  { name: "Medem", link: "Medem" },
-  { name: "ParMed", link: "ParMed" },
-  { name: "Skamed", link: "Skamed" },
-  { name: "Мед-Прогресс", link: "Мед-Прогресс" },
-  { name: "Stomion", link: "Stomion" }
+  { name: "Alfa Stom", link:"alfa" },
+  { name: "ArmDental.", link: "armdental" },
+  { name: "Artenyanner LLC.", link: "artenyan" },
+  { name: "Aledent", link: "aledent" },
+  { name: "Arkona", link: "arkona" },
+  { name: "BioChem", link: "biochem" },
+  { name: "Dental Butique", link: "butique" },
+  { name: "Dentax", link: "dentax" },
+  { name: "Eldex", link: "eldex" },
+  { name: "GALIARD", link: "galiard" },
+  { name: "GDC", link: "gdc" },
+  { name: "ГАВА Груп", link: "gava" },
+  { name: "GARNI Line", link: "garni" },
+  { name: "GlobMed", link: "globmed" },
+  { name: "Medtechservice", link: "medtechservice" },
+  { name: "MED ENGINEERING SERVICE", link: "medengineering" },
+  { name: "M&D Dental Shop", link: "mddental" },
+  { name: "Medem", link: "medem" },
+  { name: "ParMed", link: "permed" },
+  { name: "Skamed", link: "skamed" },
+  { name: "Мед-Прогресс", link: "medprogress" },
+  { name: "Stomion", link: "stomion" }
 ];
 
 export default function Header() {

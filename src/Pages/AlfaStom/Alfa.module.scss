@@ -1,0 +1,45 @@
+.container{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.headDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    gap: 30px;
+}
+.marketInfo{
+    display: flex;
+    align-items: end;
+    gap: 22px;
+
+    p{
+        color: rgba(102, 102, 102, 1);
+        font-size: 13px;
+        margin: 0;
+    }
+    h3{
+        color: rgba(31, 31, 31, 1);
+        font-size: 33px;
+        font-weight: 600;
+    }
+}
+.marketName{
+    color: rgba(102, 102, 102, 1);
+    font-size: 24px;
+    font-weight: 600;
+}
+.cardDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1300px;
+}
+.filterDiv{
+    margin-top: 50px;
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: end;
+}

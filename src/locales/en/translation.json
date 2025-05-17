@@ -34,7 +34,7 @@
     ],
     "suggest":"Suggested",
     "news":"NEWS",
-    "shops":"SHOPS",
+    "shops":"Shops",
     "add":"Append",
     "jobs":"Job announcements",
     "aboutUs": "About Us",
@@ -234,7 +234,24 @@
     "enterEmailFirst": "Please enter your email first",
     "passwordResetSent": "Password reset email sent! Check your inbox.",
     "profile": "Profile"
-  }
+  },
+
+ "activity":"Activity: Sale of dental, dental technical materials and equipment",
+ "adres":"Address: Proshyan 28/2, Yerevan, Armenia",
+ "tel":"Tel.: (+374) 010 27 92 27",
+ "working":"Working hours: Monday - Saturday: 10:00 - 22:00",
+
+
+
+"label1":"By default",
+"label2":"Name A-F",
+"label3":"Name F-A",
+"label4":"Price Ascending",
+"label5":"Price Descending",
+"label6":"Rating Ascending",
+"label7":"Rating Descending",
+"label8":"Seller A-F",
+"label9":"Seller F-A"
   
 
 }

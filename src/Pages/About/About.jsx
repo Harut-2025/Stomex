@@ -2,7 +2,6 @@ import React from 'react'
 import styles from './About.module.scss'
 import '../../i18n.js'
 import { useTranslation } from 'react-i18next';
-import Calling from '../../Components/Calling/Calling.js';
 import Order from '../../Components/Order/Order.jsx'
 
 export default function About() {
@@ -36,7 +35,6 @@ export default function About() {
 
                 </div>
             </section>
-            <Calling/>
             <section>
                 <div className={styles.containerTwo}>
                     <div className={styles.sectionTree}>

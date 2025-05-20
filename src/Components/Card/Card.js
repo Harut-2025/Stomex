@@ -17,7 +17,7 @@ export default function Card({
   cartid, 
   newStyle 
 }) {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { 
     favorit = [], 
     addCardToBasket, 
@@ -55,7 +55,7 @@ export default function Card({
             <h3>{type} {cardName}</h3>
             <p className={styles.cardInfo}>{info}</p>
             <p className={styles.cardPrice}>
-              {price}$
+              {price} {t('money')}
             </p>
           </Link>
           

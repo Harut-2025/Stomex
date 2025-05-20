@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './Header.module.scss';
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
@@ -16,7 +16,7 @@ import { Dropdown, Space } from 'antd';
 
 
 const shopList = [
-  { name: "Alfa Stom", link:"alfa" },
+  { name: "Alfa Stom", link: "alfa" },
   { name: "ArmDental.", link: "armdental" },
   { name: "Artenyanner LLC.", link: "artenyan" },
   { name: "Aledent", link: "aledent" },
@@ -80,6 +80,31 @@ export default function Header() {
 
   const displayTotalPrice = Number(totalPrice) || 0;
 
+  const basketRef = useRef(null);
+  const favoritRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        basketRef.current && !basketRef.current.contains(event.target)
+      ) {
+        setBasketOpen(false);
+      }
+      if (
+        favoritRef.current && !favoritRef.current.contains(event.target)
+      ) {
+        setFavoritOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+
+
+
+
   return (
     <header>
       <div className={styles.headerImg}></div>
@@ -102,7 +127,7 @@ export default function Header() {
 
           <div className={styles.icons}>
             <p className={styles.iconsInfo}>
-              {buyCard.length}/{displayTotalPrice.toFixed(2)} {t('money')}
+              {buyCard.length}/{displayTotalPrice.toFixed(2)}{t('value')}
             </p>
 
             <div className={styles.basketShop}>
@@ -114,7 +139,7 @@ export default function Header() {
             </div>
 
             {basketOpen && (
-              <div className={styles.shopCard}>
+              <div className={styles.shopCard} ref={basketRef}>
                 <div className={styles.list}>
                   {buyCard.map((cart, index) => {
                     const cartItemPrice = Number(cart.price) || 0;
@@ -166,7 +191,7 @@ export default function Header() {
             </div>
 
             {favoritOpen && (
-              <div className={styles.favoritList}>
+              <div className={styles.favoritList} ref={favoritRef} >
                 {favorit.length > 0 ? (
                   favorit.map((cart, index) => (
                     <div className={styles.soloFav} key={index}>

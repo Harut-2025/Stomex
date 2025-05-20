@@ -11,7 +11,7 @@ import {
 import { auth } from '../../../firebase';
 import styles from './User.module.scss';
 
-const DEFAULT_AVATAR = "./Assets/Img/profilePhoto.png";
+const DEFAULT_AVATAR = "/Assets/Img/profilePhoto.png";
 
 export default function AvatarAuthModal({ img }) {
   const { t } = useTranslation();

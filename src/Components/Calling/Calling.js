@@ -27,7 +27,7 @@ const Calling = () => {
           {t('fillFormMessagePart2')}
         </p>
         <div className={styles.icon}>
-          <img src="./Assets/Img/Calling.png" alt={t('callAlt')} />
+          <img src="/Assets/Img/Calling.png" alt={t('callAlt')} />
         </div>
         <p className={styles.phoneNumber}>+374 33-25-01-25</p>
         <a href="tel:+37433250125">

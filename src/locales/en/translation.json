@@ -17,6 +17,10 @@
     "availability":"Availability`",
      "available":" Available",
      "count" :"Quantity",
+       "callAlt": "Call",
+  "fillFormMessagePart1": "Fill in the form fields,",
+  "fillFormMessagePart2": "we will contact you shortly.",
+  "callButton": "CALL",
      
     
 

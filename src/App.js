@@ -9,6 +9,7 @@ import About from './Pages/About/About';
 import Karzina from './Pages/Karzina/Karzina';
 import ProductPage from './Pages/ProducrPage/ProductPage';
 import Alfa from './Pages/AlfaStom/Alfa';
+import Calling from '../src/Components/Calling/Calling';
 import { AppProvider, useAppContext } from '../src/Components/Context/AppContext';
 
 
@@ -33,6 +34,7 @@ function AppContent() {
             <Route key={i} path={path} element={<About />} />
           ))}
         </Routes>
+            <Calling/>
         <Footer />
       </div>
     </Router>
@@ -43,6 +45,7 @@ function App() {
   return (
       <AppProvider>
         <AppContent />
+        
       </AppProvider>
   );
 }
